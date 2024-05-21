@@ -6,8 +6,8 @@ import UseStatesBasics from "./tutorial/01-useState/starter/02-useState-basics";
 function App() {
   return (
     <div className='App'>
-      <UseStatesBasics />
       <Test />
+      <UseStatesBasics />
       <ErrorExample />
     </div>
   );
