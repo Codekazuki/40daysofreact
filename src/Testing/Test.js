@@ -13,11 +13,13 @@ const Hello = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    setTimeout(() => {
+    const counter = setTimeout(() => {
       setCount((count) => count + 1);
-    });
+    }, 1000);
+    return () => clearInterval(counter);
   }, []);
-  return <h1>hello</h1>;
+  console.log(count);
+  return <h1>It's now {count} seconds</h1>;
 };
 
 export default Test;
