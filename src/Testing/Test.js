@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./test.css";
 const Test = () => {
   return (
@@ -10,6 +10,13 @@ const Test = () => {
 };
 
 const Hello = () => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setCount((count) => count + 1);
+    });
+  }, []);
   return <h1>hello</h1>;
 };
 
