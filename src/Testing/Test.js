@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./test.css";
 const Test = () => {
+  const handleClick = () => {
+    console.log("I have been clicked");
+    console.log("Still on Clicking");
+  };
   return (
     <>
+      <button onClick={handleClick}>Click me</button>
+
       <Hello />
       <h1 className='test'>Testing</h1>
     </>
@@ -10,16 +16,7 @@ const Test = () => {
 };
 
 const Hello = () => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    const counter = setTimeout(() => {
-      setCount((count) => count + 1);
-    }, 1000);
-    return () => clearInterval(counter);
-  }, []);
-  console.log(count);
-  return <h1>It's now {count} seconds</h1>;
+  return <h1>Hello</h1>;
 };
 
 export default Test;

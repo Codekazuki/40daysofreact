@@ -1,3 +1,7 @@
 .test {
   color: green;
 }
+button {
+  background-color: green;
+  color: white;
+}
