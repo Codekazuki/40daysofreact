@@ -16,7 +16,16 @@ const Test = () => {
 };
 
 const Hello = () => {
-  return <h1>Hello</h1>;
+  const [count, setCount] = useState(0);
+  const handleClick = () => {
+    setCount((c) => c + 1);
+  };
+  return (
+    <div>
+      {" "}
+      <button onClick={handleClick}></button> {count}
+    </div>
+  );
 };
 
 export default Test;
