@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./test.css";
 const Test = () => {
   const handleClick = () => {
@@ -17,13 +17,13 @@ const Test = () => {
 
 const Hello = () => {
   const [count, setCount] = useState(0);
-  const handleClick = () => {
+  const handleAddClick = () => {
     setCount((c) => c + 1);
   };
   return (
     <div>
       {" "}
-      <button onClick={handleClick}></button> {count}
+      <button onClick={handleAddClick}>Increment</button> {count}
     </div>
   );
 };
