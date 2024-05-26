@@ -20,10 +20,14 @@ const Hello = () => {
   const handleAddClick = () => {
     setCount((c) => c + 1);
   };
+  const handleLessClick = () => {
+    setCount((c) => c - 1);
+  };
   return (
     <div>
       {" "}
-      <button onClick={handleAddClick}>Increment</button> {count}
+      <button onClick={handleAddClick}>Increment</button> {count}{" "}
+      <button onClick={handleLessClick}>Decrement</button>
     </div>
   );
 };
