@@ -5,3 +5,10 @@ button {
   background-color: green;
   color: white;
 }
+.count {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+}

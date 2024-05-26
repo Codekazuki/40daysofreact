@@ -24,7 +24,7 @@ const Hello = () => {
     setCount((c) => c - 1);
   };
   return (
-    <div>
+    <div className='count'>
       {" "}
       <button onClick={handleAddClick}>Increment</button> {count}{" "}
       <button onClick={handleLessClick}>Decrement</button>
