@@ -25,8 +25,8 @@ const Hello = () => {
   };
   return (
     <div className='count'>
-      {" "}
-      <button onClick={handleAddClick}>Increment</button> {count}{" "}
+      <button onClick={handleAddClick}>Increment</button>
+      <span className='num'>{count}</span>
       <button onClick={handleLessClick}>Decrement</button>
     </div>
   );
