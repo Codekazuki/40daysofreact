@@ -8,7 +8,7 @@ function App() {
     <div className='App'>
       <Test />
       <UseStatesBasics />
-      <ErrorExample />
+      {/* <ErrorExample /> */}
     </div>
   );
 }
