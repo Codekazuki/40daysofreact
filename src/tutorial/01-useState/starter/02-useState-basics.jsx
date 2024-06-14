@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Axios from "axios";
 
 const UseStateBasics = () => {
+  const [excuse, setExcuse] = useState("");
   const [name, setName] = useState("");
   const [age, setAge] = useState(0);
   const [count, setCount] = useState(0);
@@ -22,6 +23,13 @@ const UseStateBasics = () => {
       setCount(res.data.count);
     });
   };
+  const fetchExcuse = (excuse) => {
+    Axios.get(`https://excuser.herokuapp.com/v1/excuse/${excuse}/`).then(
+      (res) => {
+        setExcuse(res.data[0].excuse);
+      }
+    );
+  };
 
   return (
     <>
@@ -39,6 +47,11 @@ const UseStateBasics = () => {
       <h1>
         {name} is {age} years old after reviewing {count} data
       </h1>
+      <section>Generate An Excuse</section>
+      <button onClick={() => fetchExcuse("family")}>Family</button>
+      <button onClick={() => fetchExcuse("party")}>Party</button>
+      <button onClick={() => fetchExcuse("office")}>Office</button>
+      <p>{excuse}</p>
     </>
   );
 };

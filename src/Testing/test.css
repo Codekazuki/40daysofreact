@@ -5,6 +5,7 @@ button {
   background-color: green;
   color: white;
   font-size: x-large;
+  margin: 1rem;
 }
 .count {
   display: flex;
