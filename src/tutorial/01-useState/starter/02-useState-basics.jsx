@@ -44,17 +44,17 @@ const UseStateBasics = () => {
           setName(e.target.value);
         }}
       />
-      <button onClick={getDataPerson}>Predict Age</button>
       <h1>
         {name} is {age} years old after reviewing {count} data
       </h1>
+      <button onClick={getDataPerson}>Predict Age</button>
+
       <section>Generate An Excuse</section>
+      <p> {excuse} </p>
       <button onClick={() => fetchExcuse("family")}>Family</button>
       <button onClick={() => fetchExcuse("party")}>Party</button>
       <button onClick={() => fetchExcuse("office")}>Office</button>
       <button onClick={() => fetchExcuse("developers")}>Developers</button>
-
-      <p> {excuse} </p>
     </>
   );
 };
