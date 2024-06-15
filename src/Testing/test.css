@@ -38,3 +38,10 @@ button {
   padding: 12px;
   font-size: xx-large;
 }
+.excuse {
+  color: rgb(65, 153, 51);
+  background-color: rgb(242, 240, 244);
+  height: 4rem;
+  max-width: 60%;
+  margin: 0 auto;
+}

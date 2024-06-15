@@ -50,7 +50,7 @@ const UseStateBasics = () => {
       <button onClick={getDataPerson}>Predict Age</button>
 
       <section>Generate An Excuse</section>
-      <p> {excuse} </p>
+      <p className='excuse'> {excuse} </p>
       <button onClick={() => fetchExcuse("family")}>Family</button>
       <button onClick={() => fetchExcuse("party")}>Party</button>
       <button onClick={() => fetchExcuse("office")}>Office</button>
