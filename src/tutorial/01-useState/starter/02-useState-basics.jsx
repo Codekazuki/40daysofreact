@@ -31,6 +31,9 @@ const UseStateBasics = () => {
       }
     );
   };
+  const handleClick = (name) => {
+    console.log(`i have been clicked by ${name}`);
+  };
 
   return (
     <>
@@ -55,6 +58,7 @@ const UseStateBasics = () => {
       <button onClick={() => fetchExcuse("party")}>Party</button>
       <button onClick={() => fetchExcuse("office")}>Office</button>
       <button onClick={() => fetchExcuse("developers")}>Developers</button>
+      <button onClick={() => handleClick("Coach")}>click me </button>
     </>
   );
 };
