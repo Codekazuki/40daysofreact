@@ -34,7 +34,9 @@ const UseStateBasics = () => {
   let countt = 0;
   const handleClick = (name) => {
     countt++;
-    if (countt <= 3) {
+    if (countt < 2) {
+      console.log(`na 1`);
+    } else if (countt > 1 && countt < 3) {
       console.log(`i have been clicked by ${name} ${countt} times`);
     } else {
       console.log(`stop clicking me ${name}`);
