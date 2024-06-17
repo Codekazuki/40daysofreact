@@ -4,8 +4,8 @@ import Axios from "axios";
 const UseStateBasics = () => {
   const [excuse, setExcuse] = useState("");
   const [name, setName] = useState("");
-  const [age, setAge] = useState(0);
-  const [count, setCount] = useState(0);
+  const [age, setAge] = useState(null);
+  const [count, setCount] = useState(null);
   const [catFact, setCatFact] = useState("");
   const fetchCatFact = () => {
     Axios.get("https://catfact.ninja/fact").then((res) => {
@@ -55,13 +55,11 @@ const UseStateBasics = () => {
           setName(e.target.value);
         }}
       />
-      <h1>
-        {name} is {age} years old after reviewing {count} data
-      </h1>
+
       <div>
         <h1>Name: {name}</h1>
         <h1>Age: {age}</h1>
-        <h1>Count: {count}</h1>
+        <h1>Data Reviewed: {count}</h1>
       </div>
       <button onClick={getDataPerson}>Predict Age</button>
 
