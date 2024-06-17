@@ -58,6 +58,11 @@ const UseStateBasics = () => {
       <h1>
         {name} is {age} years old after reviewing {count} data
       </h1>
+      <div>
+        <h1>Name: {name}</h1>
+        <h1>Age: {age}</h1>
+        <h1>Count: {count}</h1>
+      </div>
       <button onClick={getDataPerson}>Predict Age</button>
 
       <section>Generate An Excuse</section>
