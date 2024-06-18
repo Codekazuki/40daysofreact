@@ -50,7 +50,7 @@ const UseStateBasics = () => {
       <h3>{catFact}</h3>
       <input
         type='text'
-        placeholder='Input your first name here'
+        placeholder='Input your FIRST name here'
         onChange={(e) => {
           setName(e.target.value);
         }}
@@ -64,7 +64,7 @@ const UseStateBasics = () => {
       <button onClick={getDataPerson}>Predict Age</button>
 
       <section>Generate An Excuse</section>
-      <p className='excuse'> {excuse} </p>
+      <h1 className='excuse'> {excuse} </h1>
       <button onClick={() => fetchExcuse("family")}>Family</button>
       <button onClick={() => fetchExcuse("party")}>Party</button>
       <button onClick={() => fetchExcuse("office")}>Office</button>
