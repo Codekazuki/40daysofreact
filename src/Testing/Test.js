@@ -3,7 +3,9 @@ import "./test.css";
 
 const Test = () => {
   return (
-    <div>
+    <div className='grid-class'>
+      <BigTeam />
+      <BigTeam />
       <BigTeam />
     </div>
   );

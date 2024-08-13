@@ -1,0 +1,9 @@
+.grid-class {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: yellowgreen;
+  gap: 4px;
+}
+.grid-class * {
+  margin: 2rem;
+}
