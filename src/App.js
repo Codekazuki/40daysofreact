@@ -5,7 +5,12 @@ import Test from "./Testing/Test";
 function App() {
   return (
     <div className='App'>
-      <Card />
+      <section className='cards'>
+        <Card />
+        <Card />
+        <Card />
+      </section>
+
       <Test />
     </div>
   );

@@ -1,12 +1,3 @@
-.grid-class {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: yellowgreen;
-  gap: 4px;
-}
-.grid-class * {
-  margin: 2rem;
-}
 .card div {
   display: flex;
   align-items: center;
@@ -18,8 +9,7 @@
 }
 .card {
   background-color: rgba(128, 128, 128, 0.265);
-  width: 35%;
-  margin: 2rem;
+  margin: 1rem;
 }
 .cardImage {
   height: 92px;
