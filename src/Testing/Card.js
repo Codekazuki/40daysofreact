@@ -1,21 +1,18 @@
 import React from "react";
-import pix from "../images/pix.png";
-import phone from "../images/call.png";
-import agent from "../images/agent.png";
 import "./test.css";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <section className='card'>
-      <img src={pix} className='cardImage' alt='pix' />
-      <h1>Temitope Agbowuro</h1>
+      <img src={props.profileimage} className='cardImage' alt='pix' />
+      <h1>{props.name}</h1>
       <div>
-        <img src={phone} alt='call' />
-        <p>08069477780</p>
+        <img src={props.phoneicon} alt='call' />
+        <p>{props.phonenumber}</p>
       </div>
       <div>
-        <img src={agent} alt='agent' />
-        <p>12345678910</p>
+        <img src={props.agenticon} alt='agent' />
+        <p>{props.number}</p>
       </div>
       <div></div>
     </section>

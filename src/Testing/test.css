@@ -5,11 +5,9 @@
 }
 .card div img {
   width: 2rem;
-  margin: 0 1rem;
 }
 .card {
   background-color: rgba(128, 128, 128, 0.265);
-  margin: 1rem;
 }
 .cardImage {
   height: 92px;
@@ -18,4 +16,11 @@
 .cardImage:hover {
   height: 96px;
   opacity: calc(50%);
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  background-color: antiquewhite;
+  justify-content: center;
+  border-radius: 10px;
 }
