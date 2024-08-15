@@ -7,3 +7,25 @@
 .grid-class * {
   margin: 2rem;
 }
+.card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card div img {
+  width: 2rem;
+  margin: 0 1rem;
+}
+.card {
+  background-color: rgba(128, 128, 128, 0.265);
+  width: 35%;
+  margin: 2rem;
+}
+.cardImage {
+  height: 92px;
+  border-radius: 10px;
+}
+.cardImage:hover {
+  height: 96px;
+  opacity: calc(50%);
+}
