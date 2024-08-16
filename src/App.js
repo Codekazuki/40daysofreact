@@ -41,6 +41,16 @@ function App() {
           profileimage={pix}
           about='its coming together'
         />
+        <Profile
+          title='Greatness'
+          profileimage={pix}
+          about='its coming together'
+        />
+        <Profile
+          title='Greatness'
+          profileimage={pix}
+          about='its coming together'
+        />
       </section>
 
       <Test />
