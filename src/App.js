@@ -5,6 +5,7 @@ import pix from "./images/pix.png";
 import phoneicon from "./images/call.png";
 import agent from "./images/agent.png";
 import Profile from "./Profile";
+import Joke from "./Testing/Joke";
 function App() {
   return (
     <div className='App'>
@@ -52,8 +53,19 @@ function App() {
           about='its coming together'
         />
       </section>
+      <section className='cards'>
+        <Joke
+          joke='lorem is a good joke'
+          punchline='I dont know what they mean by punchline'
+        />
+        <Joke />
+        <Joke
+          punchline='ali is a boy....simbi is a girl'
+          joke='This is just a random joke'
+        />
+      </section>
 
-      <Test />
+      {/* <Test /> */}
     </div>
   );
 }
