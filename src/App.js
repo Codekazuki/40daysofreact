@@ -58,7 +58,23 @@ function App() {
           joke='lorem is a good joke'
           punchline='I dont know what they mean by punchline'
         />
-        <Joke />
+
+        <Joke
+          punchline='ali is a boy....simbi is a girl'
+          joke='This is just a random joke'
+        />
+        <Joke
+          punchline='ali is a boy....simbi is a girl'
+          joke='This is just a random joke'
+        />
+        <Joke
+          punchline='ali is a boy....simbi is a girl'
+          joke='This is just a random joke'
+        />
+        <Joke
+          punchline='ali is a boy....simbi is a girl'
+          joke='This is just a random joke'
+        />
         <Joke
           punchline='ali is a boy....simbi is a girl'
           joke='This is just a random joke'

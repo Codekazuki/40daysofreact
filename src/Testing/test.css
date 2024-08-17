@@ -24,3 +24,12 @@
   justify-content: center;
   border-radius: 10px;
 }
+.ajoke {
+  background-color: greenyellow;
+  height: auto;
+  border-radius: 10px;
+}
+span {
+  font-size: larger;
+  font-weight: 900;
+}
