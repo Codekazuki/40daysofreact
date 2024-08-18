@@ -3,18 +3,20 @@ import "../Testing/ath.css";
 
 const Athlete = ({ img, rating, reviewcount, country, title, price }) => {
   return (
-    <div>
-      <img src={img} alt={title} />
+    <div className='athlete'>
       <div>
+        <img src={img} alt={title} />
+      </div>
+      <div className='first'>
         <span>{rating}</span>
         <span> {country} </span>
       </div>
       <h3>{title}</h3>
-      <div>
-        <h1>
+      <div className='second'>
+        <h3>
           From $<span>{price}</span>
-        </h1>
-        <span>/person</span>
+          <span>/person</span>
+        </h3>
       </div>
     </div>
   );
