@@ -1,7 +1,7 @@
 import React from "react";
 import "./test.css";
 
-const Joke = ({ joke, punchline }) => {
+const Joke = ({ joke, punchline, isPun }) => {
   return (
     <div className='ajoke'>
       {joke ? (
@@ -15,6 +15,7 @@ const Joke = ({ joke, punchline }) => {
           <span>Punchline :</span> {punchline}
         </p>
       )}
+      {isPun ? <h1>THIS IS PUN</h1> : <h1>THIS IS NOT PUN</h1>}
     </div>
   );
 };

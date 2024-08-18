@@ -57,27 +57,33 @@ function App() {
         <Joke
           joke='lorem is a good joke'
           punchline='I dont know what they mean by punchline'
+          isPun={true}
         />
 
         <Joke
           punchline='ali is a boy....simbi is a girl'
           joke='This is just a random joke'
+          isPun={false}
         />
         <Joke
           punchline='ali is a boy....simbi is a girl'
           joke='This is just a random joke'
+          isPun={true}
         />
         <Joke
           punchline='ali is a boy....simbi is a girl'
           joke='This is just a random joke'
+          isPun={true}
         />
         <Joke
           punchline='ali is a boy....simbi is a girl'
           joke='This is just a random joke'
+          isPun={false}
         />
         <Joke
           punchline='ali is a boy....simbi is a girl'
           joke='This is just a random joke'
+          isPun={true}
         />
       </section>
 
