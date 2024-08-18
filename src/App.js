@@ -6,9 +6,18 @@ import phoneicon from "./images/call.png";
 import agent from "./images/agent.png";
 import Profile from "./Profile";
 import Joke from "./Testing/Joke";
+import Athlete from "./Testing/Athlete";
 function App() {
   return (
     <div className='App'>
+      <Athlete
+        img={pix}
+        rating='5.0'
+        reviewcount='6'
+        country='Nigeria'
+        title='Greatness is brewing'
+        price='180'
+      />
       <section className='cards'>
         <Card
           profileimage={pix}
