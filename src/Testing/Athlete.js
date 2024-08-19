@@ -8,7 +8,9 @@ const Athlete = ({ img, rating, reviewcount, country, title, price }) => {
         <img src={img} alt={title} />
       </div>
       <div className='first'>
-        <span>{rating}</span>
+        <span className='span1'>
+          {rating}({reviewcount})
+        </span>
         <span> {country} </span>
       </div>
       <h3>{title}</h3>
