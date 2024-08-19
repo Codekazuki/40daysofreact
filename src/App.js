@@ -1,4 +1,3 @@
-import "./App.css";
 import Card from "./Testing/Card";
 import pix from "./images/pix.png";
 import phoneicon from "./images/call.png";
