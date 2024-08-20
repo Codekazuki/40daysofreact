@@ -2,6 +2,10 @@ import React from "react";
 import "../Testing/ath.css";
 
 const Athlete = ({ img, rating, reviewcount, country, title, price }) => {
+  const names = ["ayodele", "babafemi", "toyin"];
+  const capitalisedNames = names.map((name) => name.toUpperCase());
+  console.log(names);
+  console.log(capitalisedNames);
   return (
     <div className='athlete'>
       <div>
