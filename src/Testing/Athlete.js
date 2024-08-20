@@ -3,9 +3,14 @@ import "../Testing/ath.css";
 
 const Athlete = ({ img, rating, reviewcount, country, title, price }) => {
   const names = ["ayodele", "babafemi", "toyin"];
-  const capitalisedNames = names.map((name) => name.toUpperCase());
+  const capitalisedNames = names.map((name) => name);
   console.log(names);
   console.log(capitalisedNames);
+
+  const name = "agbowuro";
+  const capitalisename = name.charAt(0).toUpperCase() + name.slice(1);
+  console.log(capitalisename);
+
   return (
     <div className='athlete'>
       <div>
