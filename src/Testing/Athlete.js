@@ -31,7 +31,8 @@ const Athlete = ({ img, rating, reviewcount, country, title, price }) => {
           <span>/person</span>
         </h3>
       </div>
-      <p>{capitalisedNames}</p>
+
+      <p className='list'>{capitalisedNames} </p>
     </div>
   );
 };
