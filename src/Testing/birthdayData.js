@@ -3,8 +3,8 @@ export const january = [
     id: 1,
     name: "Ajayi Olumide",
     birthday: "january 14th ",
-    department: "",
-    image: "../pix.png",
+    department: "Junior church",
+    image: "asset/pix.png",
     contact: "08181445383",
   },
   {
@@ -12,7 +12,7 @@ export const january = [
     name: "David Greatness",
     birthday: "january 12th",
     department: "",
-    image: "./pix.png",
+    image: "asset/pix.png",
     contact: "08089637328",
   },
   {
@@ -20,7 +20,7 @@ export const january = [
     name: "Oyeniran Biliki",
     birthday: "January 16th",
     department: "Good Women",
-    image: "../images/pix.png",
+    image: "",
     contact: "08028286949",
   },
   {
@@ -36,7 +36,7 @@ export const january = [
     name: "Adele Tolulope",
     birthday: "January 16th ",
     department: "Choir",
-    image: "../",
+    image: "",
     contact: "08024662122",
   },
   {
