@@ -4,7 +4,7 @@ export const january = [
     name: "Ajayi Olumide",
     birthday: "january 14th ",
     department: "",
-    image: "assets/INNOVA.jpg",
+    image: "../images/call.png",
     contact: "08181445383",
   },
   {
@@ -20,7 +20,7 @@ export const january = [
     name: "Oyeniran Biliki",
     birthday: "January 16th",
     department: "Good Women",
-    image: "",
+    image: "../images/pix.png",
     contact: "08028286949",
   },
   {
@@ -36,7 +36,7 @@ export const january = [
     name: "Adele Tolulope",
     birthday: "January 16th ",
     department: "Choir",
-    image: "",
+    image: "../",
     contact: "08024662122",
   },
   {
