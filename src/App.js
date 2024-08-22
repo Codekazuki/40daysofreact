@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='App'>
       <RenderedBirthday />
-      <Athlete
+      {/* <Athlete
         img={pix}
         rating='5.0'
         reviewcount='6'
@@ -44,8 +44,8 @@ function App() {
           agenticon={agent}
           number='12345678910'
         />
-      </section>
-      <section className='cards'>
+      </section> */}
+      {/* <section className='cards'>
         <Profile title='A new dawn' profileimage={pix} about='lorem ipsium ' />
         <Profile
           title='Greatness'
@@ -62,7 +62,7 @@ function App() {
           profileimage={pix}
           about='its coming together'
         />
-      </section>
+      </section> */}
       <section className='cards'>
         <Joke
           joke='lorem is a good joke'
