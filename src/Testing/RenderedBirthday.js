@@ -5,9 +5,10 @@ import Birthday from "./Birthday";
 import { january } from "./birthdayData";
 
 const RenderedBirthday = () => {
-  const birthdayList = january.map((celebrant) => {
+  const birthdayList = january.map((celebrant, id) => {
     return (
       <Birthday
+        key={id}
         image={celebrant.image}
         name={celebrant.name}
         date={celebrant.birthday}

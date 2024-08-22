@@ -4,7 +4,7 @@ export const january = [
     name: "Ajayi Olumide",
     birthday: "january 14th ",
     department: "",
-    image: "../images/call.png",
+    image: "../pix.png",
     contact: "08181445383",
   },
   {
@@ -12,7 +12,7 @@ export const january = [
     name: "David Greatness",
     birthday: "january 12th",
     department: "",
-    image: "",
+    image: "./pix.png",
     contact: "08089637328",
   },
   {
