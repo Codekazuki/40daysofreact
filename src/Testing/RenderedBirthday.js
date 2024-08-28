@@ -1,5 +1,4 @@
 import React from "react";
-import "./birthday.css";
 
 import Birthday from "./Birthday";
 import { january } from "./birthdayData";
