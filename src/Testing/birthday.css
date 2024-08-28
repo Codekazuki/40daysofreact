@@ -3,10 +3,11 @@
   place-items: center;
   background-color: rgba(196, 150, 150, 0.63);
   height: 100%;
+  justify-content: center;
 }
 .hello {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   border-radius: 20px;
 }
