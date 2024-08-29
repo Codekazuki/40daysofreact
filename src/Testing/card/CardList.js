@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "./Card";
-import "./card.css";
 
 const details = [
   {
@@ -32,7 +31,7 @@ const CardList = () => {
       </div>
     );
   });
-  return <div>{cardList}</div>;
+  return <div className='cardlist'>{cardList}</div>;
 };
 
 export default CardList;
