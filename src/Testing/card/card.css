@@ -3,3 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-color: red;
+  gap: 4px;
+}
