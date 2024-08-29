@@ -4,7 +4,6 @@ import Birthday from "./Birthday";
 import { january } from "./birthdayData";
 
 const RenderedBirthday = () => {
-  console.log(january);
   const birthdayList = january.map((celebrant) => {
     return (
       <Birthday
