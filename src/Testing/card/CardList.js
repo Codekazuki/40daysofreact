@@ -11,13 +11,29 @@ const details = [
   {
     phrase: "Hossana",
     num: "8",
-    name: "Adebayo",
-    date: "7th july",
+    name: "Adedayo",
+    date: "17th june",
+  },
+  {
+    phrase: "Rejoice",
+    num: "4",
+    name: "Stephen",
+    date: "4th may",
+  },
+  {
+    phrase: "Divine",
+    num: "10",
+    name: "Adeola",
+    date: "27th august",
+  },
+  {
+    phrase: "Peace",
+    num: "5",
+    name: "Temitops",
+    date: "5th May",
   },
 ];
 
-// these are the props ==>
-// name, phrase, num, date
 const CardList = () => {
   const cardList = details.map((item) => {
     return (
