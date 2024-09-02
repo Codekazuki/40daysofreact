@@ -1,0 +1,11 @@
+.team {
+  background-color: green;
+  text-align: left;
+  font-size: large;
+}
+.teams {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: center;
+  gap: 8px;
+}

@@ -9,7 +9,7 @@ const Team = ({
   highestDefeat,
 }) => {
   return (
-    <div>
+    <div className='team'>
       <h1>Name:{name}</h1>
       <h1>Plays in :{league}</h1>
       <h1>Has {europeanTitls} european titles</h1>

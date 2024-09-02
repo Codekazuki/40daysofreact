@@ -1,6 +1,7 @@
 import React from "react";
 import { europeanFootballTeams } from "./footballTeams";
 import Team from "./Team";
+import "./teams.css";
 
 const EuropeanTeams = (team) => {
   const listOfEuropeanTeams = europeanFootballTeams.map((team) => {
@@ -23,7 +24,7 @@ const EuropeanTeams = (team) => {
       />
     );
   });
-  return <div>{listOfEuropeanTeams}</div>;
+  return <div className='teams'>{listOfEuropeanTeams}</div>;
 };
 
 export default EuropeanTeams;
