@@ -1,2 +1,10 @@
 .list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: center;
+  gap: 4rem;
+}
+.disciple {
+  background-color: rgb(214, 100, 100);
+  text-align: left;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { disciples } from "./disciplesData";
 import Disciple from "./Disciple";
+import "./disciples.css";
 
 const Disciples = () => {
   const listOfDisciples = disciples.map((disciple) => {

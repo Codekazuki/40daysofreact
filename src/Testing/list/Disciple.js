@@ -9,12 +9,11 @@ const Disciple = ({
 }) => {
   return (
     <div className='disciple'>
-      <p>Some Apostles are</p>
-      <h1>{name}</h1>
-      <h1>{occupation}</h1>
-      <h1>{placeOfOrigin}</h1>
-      <h1>{knownFor}</h1>
-      <h1>{mannerOfDeath}</h1>
+      <h1>Name: {name}</h1>
+      <h1>Occupation:{occupation}</h1>
+      <h1>Place of origin: {placeOfOrigin}</h1>
+      <h1>Known for: {knownFor}</h1>
+      <h1>Manner of death: {mannerOfDeath}</h1>
     </div>
   );
 };
