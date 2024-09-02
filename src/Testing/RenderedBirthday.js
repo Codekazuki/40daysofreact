@@ -5,14 +5,14 @@ import { january } from "./birthdayData";
 
 const RenderedBirthday = () => {
   const birthdayList = january.map((celebrant) => {
+    const { image, name, birthday, department, contact } = celebrant;
     return (
       <Birthday
-        image={celebrant.image}
-        name={celebrant.name}
-        date={celebrant.birthday}
-        department={celebrant.department}
-        contact={celebrant.contact}
-        img={celebrant.image}
+        image={image}
+        name={name}
+        date={birthday}
+        department={department}
+        contact={contact}
       />
     );
   });
