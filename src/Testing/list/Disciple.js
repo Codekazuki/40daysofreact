@@ -1,12 +1,7 @@
 import React from "react";
 
-const Disciple = ({
-  name,
-  occupation,
-  knownFor,
-  mannerOfDeath,
-  placeOfOrigin,
-}) => {
+const Disciple = (props) => {
+  const { name, occupation, knownFor, mannerOfDeath, placeOfOrigin } = props;
   return (
     <div className='disciple'>
       <h1>Name: {name}</h1>
