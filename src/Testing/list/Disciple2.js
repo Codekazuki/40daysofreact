@@ -4,16 +4,7 @@ import Disciple from "./Disciple";
 
 const Disciple2 = () => {
   const listOfDisciple2 = disciples.map((dis) => {
-    const { name, occupation, knownFor, mannerOfDeath, placeOfOrigin } = dis;
-    return (
-      <Disciple
-        name={name}
-        occupation={occupation}
-        knownFor={knownFor}
-        mannerOfDeath={mannerOfDeath}
-        placeOfOrigin={placeOfOrigin}
-      />
-    );
+    return <Disciple {...dis} />;
   });
   return (
     <div className='list'>
@@ -38,7 +29,8 @@ const Disciple2 = () => {
           name='Manner Of Death'
           placeholder='Manner Of Death'
         />
-      </form>
+      </form>{" "}
+      <br />
       {listOfDisciple2}
     </div>
   );
