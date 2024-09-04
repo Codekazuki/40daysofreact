@@ -12,7 +12,7 @@
   background-color: black;
   color: white;
   font-size: larger;
-  margin-left: 4px;
+  margin: 4px 4px;
   width: 5%;
   display: grid;
   place-items: center;
