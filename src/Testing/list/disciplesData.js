@@ -1,5 +1,6 @@
 export const disciples = [
   {
+    id: 1,
     name: "Peter",
     occupation: "Fisherman",
     placeOfOrigin: "Bethsaida",
@@ -8,6 +9,7 @@ export const disciples = [
     mannerOfDeath: "Crucified upside down in Rome",
   },
   {
+    id: 2,
     name: "James (son of Zebedee)",
     occupation: "Fisherman",
     placeOfOrigin: "Bethsaida",
@@ -15,6 +17,7 @@ export const disciples = [
     mannerOfDeath: "Beheaded by Herod Agrippa I in Jerusalem",
   },
   {
+    id: 3,
     name: "John",
     occupation: "Fisherman",
     placeOfOrigin: "Bethsaida",
@@ -23,6 +26,7 @@ export const disciples = [
     mannerOfDeath: "Died of natural causes in Ephesus",
   },
   {
+    id: 4,
     name: "Andrew",
     occupation: "Fisherman",
     placeOfOrigin: "Bethsaida",
@@ -31,6 +35,7 @@ export const disciples = [
     mannerOfDeath: "Crucified on an X-shaped cross in Greece",
   },
   {
+    id: 5,
     name: "Philip",
     occupation: "Fisherman",
     placeOfOrigin: "Bethsaida",
@@ -38,6 +43,7 @@ export const disciples = [
     mannerOfDeath: "Crucified in Hierapolis",
   },
   {
+    id: 6,
     name: "Bartholomew (Nathanael)",
     occupation: "Unknown",
     placeOfOrigin: "Cana in Galilee",
@@ -45,6 +51,7 @@ export const disciples = [
     mannerOfDeath: "Flayed and beheaded in Armenia",
   },
   {
+    id: 7,
     name: "Matthew",
     occupation: "Tax Collector",
     placeOfOrigin: "Capernaum",
@@ -52,6 +59,7 @@ export const disciples = [
     mannerOfDeath: "Martyred in Ethiopia, details unclear",
   },
   {
+    id: 8,
     name: "Thomas",
     occupation: "Unknown",
     placeOfOrigin: "Galilee",
@@ -60,6 +68,7 @@ export const disciples = [
     mannerOfDeath: "Speared to death in India",
   },
   {
+    id: 9,
     name: "James (son of Alphaeus)",
     occupation: "Unknown",
     placeOfOrigin: "Galilee",
@@ -67,6 +76,7 @@ export const disciples = [
     mannerOfDeath: "Martyred in Egypt, stoned and clubbed to death",
   },
   {
+    id: 10,
     name: "Thaddeus (Jude)",
     occupation: "Unknown",
     placeOfOrigin: "Galilee",
@@ -74,6 +84,7 @@ export const disciples = [
     mannerOfDeath: "Martyred in Persia, often depicted with a club",
   },
   {
+    id: 11,
     name: "Simon the Zealot",
     occupation: "Unknown",
     placeOfOrigin: "Cana in Galilee",
@@ -81,6 +92,7 @@ export const disciples = [
     mannerOfDeath: "Martyred in Persia, sawed in half according to tradition",
   },
   {
+    id: 12,
     name: "Judas Iscariot",
     occupation: "Treasurer",
     placeOfOrigin: "Kerioth in Judea",
