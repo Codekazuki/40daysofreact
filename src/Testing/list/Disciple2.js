@@ -6,6 +6,9 @@ const Disciple2 = () => {
   const listOfDisciple2 = disciples.map((dis, index) => {
     return <Disciple {...dis} number={index} />;
   });
+  const handleSubmit = () => {
+    alert("form submited");
+  };
   return (
     <div className='list'>
       <form action=''>
@@ -28,7 +31,11 @@ const Disciple2 = () => {
           type='text'
           name='Manner Of Death'
           placeholder='Manner Of Death'
-        />
+        />{" "}
+        <br />
+        <button type='submit' onClick={handleSubmit}>
+          Submit
+        </button>
       </form>{" "}
       <br />
       {listOfDisciple2}
