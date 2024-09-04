@@ -1,14 +1,14 @@
 import React from "react";
 
 const Disciple = (props) => {
-  const { name, occupation, knownFor, mannerOfDeath, placeOfOrigin, id } =
+  const { name, occupation, knownFor, mannerOfDeath, placeOfOrigin, number } =
     props;
   const handleName = () => {
     alert(name);
   };
   return (
     <div className='disciple'>
-      <p>{id}</p>
+      <p className='number'>{number + 1}</p>
       <h1>Name : {name}</h1>
       <h1>Occupation:{occupation}</h1>
       <h1>Place of origin: {placeOfOrigin}</h1>

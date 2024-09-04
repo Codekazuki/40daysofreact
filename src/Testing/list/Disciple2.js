@@ -3,8 +3,8 @@ import { disciples } from "./disciplesData";
 import Disciple from "./Disciple";
 
 const Disciple2 = () => {
-  const listOfDisciple2 = disciples.map((dis) => {
-    return <Disciple {...dis} />;
+  const listOfDisciple2 = disciples.map((dis, index) => {
+    return <Disciple {...dis} number={index} />;
   });
   return (
     <div className='list'>
