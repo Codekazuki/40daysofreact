@@ -13,7 +13,7 @@ const Disciple = ({
       <h1>Occupation:{occupation}</h1>
       <h1>Place of origin: {placeOfOrigin}</h1>
       <h1>Known for: {knownFor}</h1>
-      <h1>Manner of: {mannerOfDeath}</h1>
+      <h1>Manner of death: {mannerOfDeath}</h1>
     </div>
   );
 };
