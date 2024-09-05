@@ -7,7 +7,6 @@ import "./birthday.css";
 const BirthdayState = () => {
   const [people, setPeople] = useState(january);
   const handleDelete = (id) => {
-    console.log("hello");
     const newPeople = people.filter((person) => person.id !== id);
     setPeople(newPeople);
   };
