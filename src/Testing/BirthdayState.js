@@ -11,6 +11,9 @@ const BirthdayState = () => {
     const newPeople = people.filter((person) => person.id !== id);
     setPeople(newPeople);
   };
+  const handleClearList = () => {
+    setPeople([]);
+  };
 
   return (
     <div className='list'>
@@ -29,6 +32,7 @@ const BirthdayState = () => {
           </>
         );
       })}
+      <button onClick={handleClearList}>Clear List</button>
     </div>
   );
 };
