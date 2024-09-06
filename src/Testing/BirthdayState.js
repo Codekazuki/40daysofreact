@@ -10,6 +10,7 @@ const BirthdayState = () => {
     const newPeople = people.filter((person) => person.id !== id);
     setPeople(newPeople);
   };
+
   const handleClearList = () => {
     setPeople([]);
   };
@@ -19,16 +20,19 @@ const BirthdayState = () => {
       {people.map((person) => {
         const { id, name, birthday, department, image, contact } = person;
         return (
-          <>
+          <div>
             <Birthday
+              key={id}
               image={image}
               name={name}
               date={birthday}
               department={department}
               contact={contact}
             />
-            <button onClick={() => handleDelete(id)}>Delete</button>
-          </>
+            {/* <div>
+              <button onClick={() => handleDelete(id)}>Delete</button>
+            </div> */}
+          </div>
         );
       })}
       <button onClick={handleClearList}>Clear List</button>
