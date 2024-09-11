@@ -28,6 +28,10 @@ const RenderedReviews = () => {
       return checkIndex(newIndex);
     });
   };
+  const randomPerson = () => {
+    const randomNumber = Math.floor(Math.random() * people.length);
+    setIndex(checkIndex(randomNumber));
+  };
 
   return (
     <main>
@@ -49,6 +53,9 @@ const RenderedReviews = () => {
             <FaChevronRight />
           </button>
         </div>
+        <button className='random-btn' onClick={randomPerson}>
+          Random Person
+        </button>
       </article>
     </main>
   );
