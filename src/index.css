@@ -1,0 +1,15 @@
+.btn {
+  cursor: pointer;
+  color: white;
+  background: rgb(185, 58, 185);
+  border: transparent;
+  border-radius: 8px;
+  letter-spacing: 4px;
+  padding: 0.375rem 0.75rem;
+  transition: 0.3s ease-in-out all;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.btn:hover {
+  background: rgb(228, 141, 228);
+}

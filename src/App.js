@@ -4,12 +4,13 @@ import Disciple2 from "./Testing/list/Disciple2";
 import Disciples from "./Testing/list/Disciples";
 import EuropeanTeams from "./Testing/list/EuropeanTeams";
 import RenderedBirthday from "./Testing/RenderedBirthday";
-import Tour from "./tours/Tour";
+
+import RenderedTours from "./tours/RenderedTours";
 
 function App() {
   return (
     <div className='App'>
-      <Tour />
+      <RenderedTours />
       {/* <BirthdayState /> */}
       {/* <Disciple2 /> */}
       {/* <Disciples /> */}
