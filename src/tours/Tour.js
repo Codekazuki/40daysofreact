@@ -17,12 +17,12 @@ const Tour = ({ id, image, info, name, price, removeTour }) => {
             }}
             className='btn'
           >
-            continue reading
+            {readMore ? "show less" : "read more"}
           </button>
         </p>
       </div>
 
-      <button onClick={() => removeTour(id)}>RemoveTour</button>
+      <button onClick={() => removeTour(id)}>Not Interested</button>
     </div>
   );
 };

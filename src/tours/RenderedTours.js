@@ -35,6 +35,15 @@ const RenderedTours = () => {
   if (isLoading) {
     return <ToursLoading />;
   }
+  if (tours.length === 0) {
+    return (
+      <div>
+        <h1>No Tours Left</h1>
+        <button onClick={fetchTours}>Fetch Tours again</button>
+      </div>
+    );
+  }
+
   return (
     <div>
       <Tours tours={tours} clearTours={clearTours} removeTour={removeTour} />
