@@ -1,6 +1,6 @@
 import React from "react";
 
-const Tour = ({ id, image, info, name, price }) => {
+const Tour = ({ id, image, info, name, price, removeTour }) => {
   return (
     <div className='tour'>
       <img className='tour-image' src={image} alt={name} />
@@ -10,6 +10,7 @@ const Tour = ({ id, image, info, name, price }) => {
         <p className='tour-info'>{info}</p>
       </div>
       <button className='btn'>continue reading</button>
+      <button onClick={() => removeTour(id)}>RemoveTour</button>
     </div>
   );
 };
