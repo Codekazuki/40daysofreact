@@ -7,6 +7,7 @@ import RenderedBirthday from "./Testing/RenderedBirthday";
 
 import RenderedTours from "./tours/RenderedTours";
 import "../src/tours/tour.css";
+import "../src/reviews/review.css";
 import RenderedReviews from "./reviews/RenderedReviews";
 
 function App() {
