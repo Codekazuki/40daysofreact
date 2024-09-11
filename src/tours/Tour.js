@@ -1,13 +1,14 @@
 import React from "react";
 
-const Tour = () => {
+const Tour = ({ id, image, info, name, price }) => {
   return (
     <div>
-      <img src='' alt='' />
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        eveniet labore vitae.
-      </h1>
+      <img src={image} alt={name} />
+      <span>${price}</span>
+      <div>
+        <h5>{name}</h5>
+        <p>{info}</p>
+      </div>
       <button className='btn'>continue reading</button>
     </div>
   );
