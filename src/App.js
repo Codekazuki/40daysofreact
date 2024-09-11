@@ -6,14 +6,17 @@ import EuropeanTeams from "./Testing/list/EuropeanTeams";
 import RenderedBirthday from "./Testing/RenderedBirthday";
 
 import RenderedTours from "./tours/RenderedTours";
+import "../src/questions/questions.css";
 import "../src/tours/tour.css";
 import "../src/reviews/review.css";
 import RenderedReviews from "./reviews/RenderedReviews";
+import RenderedQuestion from "./questions/RenderedQuestion";
 
 function App() {
   return (
     <div className='App'>
-      <RenderedReviews />
+      <RenderedQuestion />
+      {/* <RenderedReviews /> */}
       {/* <RenderedTours /> */}
       {/* <BirthdayState /> */}
       {/* <Disciple2 /> */}
