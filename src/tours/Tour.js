@@ -2,12 +2,12 @@ import React from "react";
 
 const Tour = ({ id, image, info, name, price }) => {
   return (
-    <div>
-      <img src={image} alt={name} />
-      <span>${price}</span>
+    <div className='tour'>
+      <img className='tour-image' src={image} alt={name} />
+      <span className='tour-price'>${price}</span>
       <div>
-        <h5>{name}</h5>
-        <p>{info}</p>
+        <h5 className='tour-name'>{name}</h5>
+        <p className='tour-info'>{info}</p>
       </div>
       <button className='btn'>continue reading</button>
     </div>

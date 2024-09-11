@@ -1,0 +1,32 @@
+.tour {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+}
+.tour-image {
+  height: 100%;
+  width: 100%;
+}
+.tour-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem;
+  justify-content: center;
+}
+.tour-price {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: larger;
+  font-weight: 900;
+  color: gold;
+}
+.tour-name {
+  text-align: center;
+  font-weight: 900;
+  font-size: larger;
+  margin: 8px 0;
+}

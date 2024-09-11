@@ -13,6 +13,7 @@ const RenderedTours = () => {
     try {
       const resp = await fetch(url);
       const tours = await resp.json();
+      setTours(tours);
       console.log(tours);
     } catch (error) {
       console.log(error);

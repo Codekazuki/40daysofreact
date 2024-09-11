@@ -6,6 +6,7 @@ import EuropeanTeams from "./Testing/list/EuropeanTeams";
 import RenderedBirthday from "./Testing/RenderedBirthday";
 
 import RenderedTours from "./tours/RenderedTours";
+import "../src/tours/tour.css";
 
 function App() {
   return (
