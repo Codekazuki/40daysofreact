@@ -8,7 +8,7 @@
 }
 .tour-image {
   height: 25rem;
-  width: 100%;
+  width: 90%;
   object-fit: cover;
   border-top-right-radius: 0.25rem;
   border-top-left-radius: 0.25rem;
@@ -16,13 +16,14 @@
 .tour-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 4rem;
+  gap: 2rem;
   justify-content: center;
 }
 .tour-price {
   position: absolute;
   top: 0;
   left: 0;
+  margin-left: 20px;
   font-size: larger;
   font-weight: 900;
   color: white;
@@ -34,4 +35,8 @@
   font-weight: 900;
   font-size: larger;
   margin: 8px 0;
+}
+.tour-image:hover {
+  width: 95%;
+  filter: opacity(24px);
 }
