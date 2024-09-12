@@ -1,7 +1,12 @@
 import React from "react";
+import Title from "./Title";
 
 const RenderedMenu = () => {
-  return <div>RenderedMenu</div>;
+  return (
+    <main>
+      <Title text='Menu' />
+    </main>
+  );
 };
 
 export default RenderedMenu;
