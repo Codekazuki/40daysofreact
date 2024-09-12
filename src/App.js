@@ -9,13 +9,17 @@ import RenderedTours from "./tours/RenderedTours";
 import "../src/questions/questions.css";
 import "../src/tours/tour.css";
 import "../src/reviews/review.css";
+import "../src/menu/menu.css";
+
 import RenderedReviews from "./reviews/RenderedReviews";
 import RenderedQuestion from "./questions/RenderedQuestion";
+import RenderedMenu from "./menu/RenderedMenu";
 
 function App() {
   return (
     <div className='App'>
-      <RenderedQuestion />
+      <RenderedMenu />
+      {/* <RenderedQuestion /> */}
       {/* <RenderedReviews /> */}
       {/* <RenderedTours /> */}
       {/* <BirthdayState /> */}
