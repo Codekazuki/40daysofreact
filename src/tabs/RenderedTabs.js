@@ -1,25 +1,36 @@
 import React, { useEffect, useState } from "react";
+import JobInfo from "./JobInfo";
 const url = "https://www.course-api.com/react-tabs-project";
 
 const RenderedTabs = () => {
-  const [tabs, setTabs] = useState(null);
+  const [jobs, setJobs] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const fetchData = async () => {
+  const fetchJobs = async () => {
     try {
       const response = await fetch(url);
-      const data = await response.json();
-      console.log(data);
+      const newJobs = await response.json();
+      setJobs(newJobs);
+      setIsLoading(false);
     } catch (error) {
       console.log(error);
     }
   };
   useEffect(() => {
-    fetchData();
+    fetchJobs();
   }, []);
+  if (isLoading) {
+    return (
+      <section className='jobs-center'>
+        <div className='loading'>loading</div>
+      </section>
+    );
+  }
+
   return (
-    <div>
-      <h2>hello</h2>
-    </div>
+    <section className='jobs-center'>
+      <JobInfo jobs={jobs} />
+    </section>
   );
 };
 
