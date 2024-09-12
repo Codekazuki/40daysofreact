@@ -10,14 +10,18 @@ import "../src/questions/questions.css";
 import "../src/tours/tour.css";
 import "../src/reviews/review.css";
 import "../src/menu/menu.css";
+import "../src/tabs/tabs.css";
 
 import RenderedReviews from "./reviews/RenderedReviews";
 import RenderedQuestion from "./questions/RenderedQuestion";
 import RenderedMenu from "./menu/RenderedMenu";
+import { SiRender } from "react-icons/si";
+import RenderedTabs from "./tabs/RenderedTabs";
 
 function App() {
   return (
     <div className='App'>
+      <RenderedTabs />
       <RenderedMenu />
       {/* <RenderedQuestion /> */}
       {/* <RenderedReviews /> */}
