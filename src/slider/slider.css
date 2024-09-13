@@ -242,13 +242,14 @@ Slider
   /* opacity: 0; */
   transition: var(--transition);
 }
-/* article.activeSlide {
+.active-slide {
   opacity: 1;
   transform: translateX(0);
 }
-article.lastSlide {
+.last-slide {
   transform: translateX(-100%);
-} */
+  opacity: 0;
+}
 .next-slide {
   transform: translateX(100%);
 }
