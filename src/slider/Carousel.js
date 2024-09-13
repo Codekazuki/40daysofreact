@@ -5,7 +5,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 console.log(shortList);
 const Carousel = () => {
-  const [people, setPeople] = useState(shortList);
+  const [people, setPeople] = useState(longList);
 
   const nextSlide = () => {
     console.log("next");
@@ -20,21 +20,21 @@ const Carousel = () => {
         const { id, image, name, quote, title } = person;
         console.log(person);
         return (
-          <article className='slider' key={id}>
+          <article className='slider next-slide' key={id}>
             <img src={image} alt={name} className='person-img' />
             <h5 className='name'>{name}</h5>
             <p className='title'>{title}</p>
             <p className='quote'>{quote}</p>
             <FaQuoteRight className='icon' />
-            <button className='prev' onClick={() => prevSlide()}>
-              <FiChevronLeft />
-            </button>
-            <button className='next' onClick={() => nextSlide()}>
-              <FiChevronRight />
-            </button>
           </article>
         );
       })}
+      <button className='prev' onClick={() => prevSlide()}>
+        <FiChevronLeft />
+      </button>
+      <button className='next' onClick={() => nextSlide()}>
+        <FiChevronRight />
+      </button>
     </div>
   );
 };
