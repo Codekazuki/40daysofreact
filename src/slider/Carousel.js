@@ -6,6 +6,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 console.log(shortList);
 const Carousel = () => {
   const [people, setPeople] = useState(shortList);
+
   const nextSlide = () => {
     console.log("next");
   };
@@ -24,7 +25,7 @@ const Carousel = () => {
             <h5 className='name'>{name}</h5>
             <p className='title'>{title}</p>
             <p className='quote'>{quote}</p>
-            <FaQuoteRight />
+            <FaQuoteRight className='icon' />
             <button className='prev' onClick={() => prevSlide()}>
               <FiChevronLeft />
             </button>
