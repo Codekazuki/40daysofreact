@@ -4,7 +4,6 @@ import Disciple2 from "./Testing/list/Disciple2";
 import Disciples from "./Testing/list/Disciples";
 import EuropeanTeams from "./Testing/list/EuropeanTeams";
 import RenderedBirthday from "./Testing/RenderedBirthday";
-import "react-toastify/dist/ReactToastity.css";
 
 import RenderedTours from "./tours/RenderedTours";
 // import "../src/questions/questions.css";
@@ -13,6 +12,7 @@ import RenderedTours from "./tours/RenderedTours";
 // import "../src/menu/menu.css";
 // import "../src/tabs/tabs.css";
 import "../src/colorGenerator/colorGenerator.css";
+import "react-toastify/dist/ReactToastify.css";
 
 import RenderedReviews from "./reviews/RenderedReviews";
 import RenderedQuestion from "./questions/RenderedQuestion";
