@@ -17,11 +17,13 @@ import RenderedQuestion from "./questions/RenderedQuestion";
 import RenderedMenu from "./menu/RenderedMenu";
 import RenderedTabs from "./tabs/RenderedTabs";
 import Slider from "./slider/Slider";
+import Lorem from "./lorem/Lorem";
 
 function App() {
   return (
     <div className='App'>
-      <Slider />
+      <Lorem />
+      {/* <Slider /> */}
       {/* <RenderedTabs /> */}
       {/* <RenderedMenu /> */}
       {/* <RenderedQuestion /> */}
