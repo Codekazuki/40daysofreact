@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-const SingleColor = () => {
-  return <div>list</div>;
+const SingleColor = ({ colors }) => {
+  return <div>{colors.map(() => {})}</div>;
 };
 
 export default SingleColor;
