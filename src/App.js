@@ -18,11 +18,13 @@ import RenderedMenu from "./menu/RenderedMenu";
 import RenderedTabs from "./tabs/RenderedTabs";
 import Slider from "./slider/Slider";
 import Lorem from "./lorem/Lorem";
+import ColorGenerator from "./colorGenerator/ColorGenerator";
 
 function App() {
   return (
     <div className='App'>
-      <Lorem />
+      <ColorGenerator />
+      {/* <Lorem /> */}
       {/* <Slider /> */}
       {/* <RenderedTabs /> */}
       {/* <RenderedMenu /> */}
