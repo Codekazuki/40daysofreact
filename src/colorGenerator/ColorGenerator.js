@@ -7,21 +7,18 @@ import { ToastContainer, toast } from "react-toastify";
 
 const ColorGenerator = () => {
   const [colors, setColors] = useState(new Values("#f15025").all(10));
-
-  toast.success("🦄 Wow so easy!", {
-    position: "top-right",
-    autoClose: 3000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-  });
+  const addColor = (color) => {
+    try {
+      const newColors = new Values(color).all(10);
+      setColors(newColors);
+    } catch (error) {
+      toast.error(error.message);
+    }
+  };
   return (
     <div>
       <ToastContainer position='top-center' />
-      <ColorForm />
+      <ColorForm addColor={addColor} />
       <SingleColor colors={colors} />
     </div>
   );

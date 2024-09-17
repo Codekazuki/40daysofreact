@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 
-const ColorForm = () => {
+const ColorForm = ({ addColor }) => {
   const [color, setColor] = useState("");
   const handleChange = (e) => {
     setColor(e.target.value);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(color);
+    addColor(color);
   };
   return (
     <section className='container'>
       <h4>Color generator</h4>
 
-      <form className='color-form' onSubmit={handleSubmit}>
+      <form className='color-form' value={color} onSubmit={handleSubmit}>
         <input type='color' value={color} onChange={handleChange} />
         <input
           type='text'
