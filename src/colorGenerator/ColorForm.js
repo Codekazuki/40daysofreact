@@ -14,13 +14,14 @@ const ColorForm = () => {
       <h4>Color generator</h4>
 
       <form className='color-form' onSubmit={handleSubmit}>
+        <input type='color' value={color} onChange={handleChange} />
         <input
           type='text'
           placeholder='#051087'
           onChange={handleChange}
           value={color}
         />
-        <button className='btn' style={{ background: color }}>
+        <button className='btn' type='button' style={{ background: color }}>
           Generate Color
         </button>
       </form>
