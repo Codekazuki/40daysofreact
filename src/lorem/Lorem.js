@@ -35,7 +35,9 @@ const Lorem = () => {
           Generate
         </button>
       </form>
-      <p className='result'>{text}</p>
+      {text.map((item, index) => {
+        return <p key={item.index}>{item} </p>;
+      })}
     </section>
   );
 };
