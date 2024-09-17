@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import data from "./data";
 import "./lorem.css";
-console.log(data);
 
 const Lorem = () => {
   const [count, setCount] = useState(1);
@@ -15,7 +14,6 @@ const Lorem = () => {
     const amount = parseInt(count);
     const generate = data.slice(0, amount);
     setText(generate);
-    console.log(text);
   };
   return (
     <section className='section-center'>
