@@ -11,6 +11,7 @@ import RenderedTours from "./tours/RenderedTours";
 // import "../src/reviews/review.css";
 // import "../src/menu/menu.css";
 // import "../src/tabs/tabs.css";
+import "../src/colorGenerator/colorGenerator.css";
 
 import RenderedReviews from "./reviews/RenderedReviews";
 import RenderedQuestion from "./questions/RenderedQuestion";
