@@ -13,15 +13,15 @@ const ColorForm = ({ addColor }) => {
     <section className='container'>
       <h4>Color generator</h4>
 
-      <form className='color-form' value={color} onSubmit={handleSubmit}>
-        <input type='color' value={color} onChange={handleChange} />
+      <form className='color-form' onSubmit={handleSubmit}>
+        <input type='color' onChange={handleChange} value={color} />
         <input
           type='text'
           placeholder='#051087'
           onChange={handleChange}
           value={color}
         />
-        <button className='btn' type='button' style={{ background: color }}>
+        <button className='btn' type='submit' style={{ background: color }}>
           Generate Color
         </button>
       </form>
