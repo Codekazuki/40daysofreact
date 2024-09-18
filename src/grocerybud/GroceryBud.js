@@ -6,7 +6,11 @@ import "./groceryBud.css";
 
 const GroceryBud = () => {
   const [items, setItems] = useState([]);
-  const deleteItem = () => {};
+
+  const deleteItem = (itemId) => {
+    const newList = items.filter((sorted) => sorted.id !== itemId);
+    setItems(newList);
+  };
   const addItem = (itemName) => {
     const newItem = {
       id: nanoid(),
