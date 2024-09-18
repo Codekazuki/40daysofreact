@@ -21,11 +21,13 @@ import RenderedTabs from "./tabs/RenderedTabs";
 import Slider from "./slider/Slider";
 import Lorem from "./lorem/Lorem";
 import ColorGenerator from "./colorGenerator/ColorGenerator";
+import GroceryBud from "./grocerybud/GroceryBud";
 
 function App() {
   return (
     <div className='App'>
-      <ColorGenerator />
+      <GroceryBud />
+      {/* <ColorGenerator /> */}
       {/* <Lorem /> */}
       {/* <Slider /> */}
       {/* <RenderedTabs /> */}
