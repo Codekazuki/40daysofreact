@@ -12,9 +12,9 @@ const Form = ({ addItem }) => {
     <form onSubmit={handleSubmit}>
       <h4>Grocery Bud</h4>
       <div className='form-control'>
-        <label htmlFor='item' name='item'>
+        {/* <label htmlFor='item' name='item'>
           Item
-        </label>
+        </label> */}
         <input
           placeholder='input your item'
           id='item'
@@ -23,7 +23,9 @@ const Form = ({ addItem }) => {
           type='text'
           className='form-input'
         />
-        <button type='submit'>Add Item</button>
+        <button className='btn' type='submit'>
+          Add Item
+        </button>
       </div>
     </form>
   );

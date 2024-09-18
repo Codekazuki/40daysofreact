@@ -3,8 +3,12 @@ import React, { useState } from "react";
 const SingleItem = ({ item, deleteItem }) => {
   const [isChecked, setIsChecked] = useState(false);
   return (
-    <div className='single-item'>
-      <input type='checkbox' onChange={() => setIsChecked(!isChecked)} />
+    <div className=' grocery'>
+      <input
+        className='check'
+        type='checkbox'
+        onChange={() => setIsChecked(!isChecked)}
+      />
       <p
         className='grocery-item'
         style={{

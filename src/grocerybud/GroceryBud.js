@@ -21,7 +21,7 @@ const GroceryBud = () => {
   };
 
   return (
-    <section>
+    <section className='section-center'>
       <Form addItem={addItem} />
       <Items deleteItem={deleteItem} items={items} />
     </section>
