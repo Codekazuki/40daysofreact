@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Form from "./Form";
 import { nanoid } from "nanoid";
+import Items from "./Items";
 
 const GroceryBud = () => {
   const [items, setItems] = useState([]);
+  const deleteItem = () => {};
   const addItem = (itemName) => {
     const newItem = {
       id: nanoid(),
@@ -16,6 +18,7 @@ const GroceryBud = () => {
   return (
     <section>
       <Form addItem={addItem} />
+      <Items deleteItem={deleteItem} items={items} />
     </section>
   );
 };
