@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "./Form";
 import { nanoid } from "nanoid";
 import Items from "./Items";
+import "./groceryBud.css";
 
 const GroceryBud = () => {
   const [items, setItems] = useState([]);

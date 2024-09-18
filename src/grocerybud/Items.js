@@ -2,11 +2,16 @@ import React from "react";
 import SingleItem from "./SingleItem";
 
 const Items = ({ deleteItem, items }) => {
-  console.log(deleteItem, items);
   return (
-    <div>
+    <div className='items'>
       {items.map((singleItem) => {
-        return <SingleItem deleteItem={deleteItem} item={items} />;
+        return (
+          <SingleItem
+            key={singleItem.id}
+            deleteItem={deleteItem}
+            item={singleItem}
+          />
+        );
       })}
     </div>
   );
