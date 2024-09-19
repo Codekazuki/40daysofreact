@@ -20,6 +20,10 @@ const setLocalStorage = (items) => {
 const GroceryBud = () => {
   const [items, setItems] = useState(getLocalStorage());
   const clearList = () => {
+    if (items.length === 0) {
+      toast.error("Your List is Empty");
+      return;
+    }
     setItems([]);
     setLocalStorage([]);
     toast.success("List cleared successfully ✅");
