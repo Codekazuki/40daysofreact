@@ -211,7 +211,6 @@ Grocery List
   border-bottom-left-radius: var(--radius);
   border-color: transparent;
   font-size: 1rem;
-
   color: var(--clr-grey-5);
   display: flex;
   justify-content: space-around;
@@ -255,6 +254,7 @@ Grocery List
   border-radius: var(--radius);
   text-transform: capitalize;
   font-size: larger;
+  color: black;
 }
 .grocery-item:hover {
   color: var(--clr-grey-5);
@@ -320,4 +320,6 @@ Grocery List
 .completed {
   text-transform: capitalize;
   color: #155724;
+  font-size: larger;
+  font-weight: 900;
 }
