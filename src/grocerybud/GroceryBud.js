@@ -4,12 +4,23 @@ import { nanoid } from "nanoid";
 import Items from "./Items";
 import "./groceryBud.css";
 
+const getLocalStorage = () => {
+  let list = localStorage.getItem("list");
+  if (list) {
+    list = JSON.parse(localStorage.getItem("list"));
+  }
+};
+const setLocalStorage = (items) => {
+  localStorage.setItem("list", JSON.stringify(items));
+};
 const GroceryBud = () => {
+  getLocalStorage();
   const [items, setItems] = useState([]);
 
   const deleteItem = (itemId) => {
     const newList = items.filter((sorted) => sorted.id !== itemId);
     setItems(newList);
+    setLocalStorage(newList);
   };
   const addItem = (itemName) => {
     const newItem = {
@@ -17,7 +28,9 @@ const GroceryBud = () => {
       name: itemName,
       completed: false,
     };
-    setItems([...items, newItem]);
+    const newItems = [...items, newItem];
+    setItems(newItems);
+    setLocalStorage(newItems);
   };
 
   return (
