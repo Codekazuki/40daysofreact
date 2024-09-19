@@ -8,14 +8,16 @@ const getLocalStorage = () => {
   let list = localStorage.getItem("list");
   if (list) {
     list = JSON.parse(localStorage.getItem("list"));
+  } else {
+    list = [];
   }
+  return list;
 };
 const setLocalStorage = (items) => {
   localStorage.setItem("list", JSON.stringify(items));
 };
 const GroceryBud = () => {
-  getLocalStorage();
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(getLocalStorage());
 
   const deleteItem = (itemId) => {
     const newList = items.filter((sorted) => sorted.id !== itemId);
@@ -32,11 +34,22 @@ const GroceryBud = () => {
     setItems(newItems);
     setLocalStorage(newItems);
   };
+  const editStatus = (itemId) => {
+    const newItems = items.map((item) => {
+      if (item.id === itemId) {
+        const newItem = { ...item, completed: !item.completed };
+        return newItem;
+      }
+      return item;
+    });
+    setItems(newItems);
+    setLocalStorage(newItems);
+  };
 
   return (
     <section className='section-center'>
       <Form addItem={addItem} />
-      <Items deleteItem={deleteItem} items={items} />
+      <Items deleteItem={deleteItem} items={items} editStatus={editStatus} />
     </section>
   );
 };
