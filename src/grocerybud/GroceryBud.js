@@ -19,6 +19,11 @@ const setLocalStorage = (items) => {
 };
 const GroceryBud = () => {
   const [items, setItems] = useState(getLocalStorage());
+  const clearList = () => {
+    setItems([]);
+    setLocalStorage([]);
+    toast.success("List cleared successfully ✅");
+  };
 
   const deleteItem = (itemId) => {
     const newList = items.filter((sorted) => sorted.id !== itemId);
@@ -51,9 +56,14 @@ const GroceryBud = () => {
 
   return (
     <section className='section-center'>
-      <ToastContainer position='top-center' />
+      <ToastContainer position='top-left' />
       <Form addItem={addItem} />
-      <Items deleteItem={deleteItem} items={items} editStatus={editStatus} />
+      <Items
+        clearList={clearList}
+        deleteItem={deleteItem}
+        items={items}
+        editStatus={editStatus}
+      />
     </section>
   );
 };
