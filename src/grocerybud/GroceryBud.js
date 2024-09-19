@@ -3,6 +3,7 @@ import Form from "./Form";
 import { nanoid } from "nanoid";
 import Items from "./Items";
 import "./groceryBud.css";
+import { ToastContainer, toast } from "react-toastify";
 
 const getLocalStorage = () => {
   let list = localStorage.getItem("list");
@@ -23,6 +24,7 @@ const GroceryBud = () => {
     const newList = items.filter((sorted) => sorted.id !== itemId);
     setItems(newList);
     setLocalStorage(newList);
+    toast.success("Item deleted suvvessfully");
   };
   const addItem = (itemName) => {
     const newItem = {
@@ -33,6 +35,7 @@ const GroceryBud = () => {
     const newItems = [...items, newItem];
     setItems(newItems);
     setLocalStorage(newItems);
+    toast.success("Item Added successfully ✅");
   };
   const editStatus = (itemId) => {
     const newItems = items.map((item) => {
@@ -48,6 +51,7 @@ const GroceryBud = () => {
 
   return (
     <section className='section-center'>
+      <ToastContainer position='top-center' />
       <Form addItem={addItem} />
       <Items deleteItem={deleteItem} items={items} editStatus={editStatus} />
     </section>
