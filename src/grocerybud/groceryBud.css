@@ -317,5 +317,7 @@ Grocery List
   color: aqua;
   opacity: 1;
 }
-.check {
+.completed {
+  text-transform: capitalize;
+  color: #155724;
 }

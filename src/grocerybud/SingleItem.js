@@ -9,13 +9,7 @@ const SingleItem = ({ item, deleteItem, editStatus }) => {
         type='checkbox'
         onChange={() => editStatus(item.id)}
       />
-      <p
-        className='grocery-item'
-        style={{
-          textTransform: "capitalize",
-          textDecoration: item.completed && "line-through",
-        }}
-      >
+      <p className="{item.completed? 'completed':'grocery-item'}">
         {item.name}
       </p>
       <button className='btn remove-btn' onClick={() => deleteItem(item.id)}>
