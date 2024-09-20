@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa";
+import { social, links } from "./data";
+import logo from "./logo.svg";
 
 const Navbar = () => {
-  return <div>Navbar</div>;
+  const [showLinks, setShowLinks] = useState(false);
+  const [showIcons, setShowIcons] = useState(false);
+  const [showLogo, setShowLogo] = useState(false);
+  return (
+    <div>
+      <nav className='nav-center'>
+        <div className='nav-header'>
+          <img src={logo} alt='logo' />
+          <button className='nav-toggle'>
+            <FaBars />
+          </button>
+        </div>
+        <div className='links-container'>
+          <ul className='links'>
+            {links.map((link) => {
+              const { id, url, text } = link;
+              return <li key={id}>{text}</li>;
+            })}
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
 };
 
 export default Navbar;
