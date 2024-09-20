@@ -22,11 +22,13 @@ import Slider from "./slider/Slider";
 import Lorem from "./lorem/Lorem";
 import ColorGenerator from "./colorGenerator/ColorGenerator";
 import GroceryBud from "./grocerybud/GroceryBud";
+import RenderedNavbar from "./navbar/RenderedNavbar";
 
 function App() {
   return (
     <div className='App'>
-      <GroceryBud />
+      <RenderedNavbar />
+      {/* <GroceryBud /> */}
       {/* <ColorGenerator /> */}
       {/* <Lorem /> */}
       {/* <Slider /> */}
