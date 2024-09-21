@@ -50,6 +50,7 @@ const GroceryBud = () => {
     const newItems = items.map((item) => {
       if (item.id === itemId) {
         const newItem = { ...item, completed: !item.completed };
+
         return newItem;
       }
       return item;

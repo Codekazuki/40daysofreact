@@ -13,20 +13,20 @@ const Form = ({ addItem }) => {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <h4>Grocery Bud</h4>
+      <h4>Today's Task</h4>
       <div className='form-control'>
         {/* <label htmlFor='item' name='item'>
           Item
         </label> */}
         <input
-          placeholder='input your item'
+          placeholder='input your task'
           id='item'
           value={newItem}
           onChange={(e) => setNewItem(e.target.value)}
           type='text'
           className='form-input'
         />
-        <button className='btn' type='submit'>
+        <button className='btn' type='button'>
           Add Item
         </button>
       </div>
