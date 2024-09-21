@@ -33,7 +33,7 @@ const GroceryBud = () => {
     const newList = items.filter((sorted) => sorted.id !== itemId);
     setItems(newList);
     setLocalStorage(newList);
-    toast.success("Item deleted suvvessfully");
+    toast.success("Item deleted");
   };
   const addItem = (itemName) => {
     const newItem = {
@@ -44,7 +44,7 @@ const GroceryBud = () => {
     const newItems = [...items, newItem];
     setItems(newItems);
     setLocalStorage(newItems);
-    toast.success("Item Added successfully ✅");
+    toast.success("item confirmed✅");
   };
   const editStatus = (itemId) => {
     const newItems = items.map((item) => {
