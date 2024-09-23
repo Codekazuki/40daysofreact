@@ -4,9 +4,9 @@ import Navbar from "./Navbar";
 
 const RenderedNavbar = () => {
   return (
-    <main>
+    <div>
       <Navbar />
-    </main>
+    </div>
   );
 };
 
