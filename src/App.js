@@ -27,8 +27,8 @@ import RenderedNavbar from "./navbar/RenderedNavbar";
 function App() {
   return (
     <div className='App'>
-      {/* <RenderedNavbar /> */}
-      <GroceryBud />
+      <RenderedNavbar />
+      {/* <GroceryBud /> */}
       {/* <ColorGenerator /> */}
       {/* <Lorem /> */}
       {/* <Slider /> */}

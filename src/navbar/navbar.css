@@ -143,6 +143,15 @@ nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
+.nav-center {
+  /* max-width: 1170px; */
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
 .nav-header {
   display: flex;
   align-items: center;
@@ -182,9 +191,9 @@ nav {
   display: none;
 }
 .links-container {
-  /* height: 0;
+  height: 0;
   overflow: hidden;
-  transition: var(--transition); */
+  transition: var(--transition);
 }
 .show-container {
   height: 10rem;
@@ -192,6 +201,7 @@ nav {
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
+    border: 2px solid red;
     margin: 0 auto;
     display: flex;
     align-items: center;
