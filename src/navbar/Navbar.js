@@ -14,7 +14,9 @@ const Navbar = () => {
     setShowLinks(!showLinks);
   };
   const linkStyles = {
-    // height: showLinks ? `${linksRef.getBoundingClientRect().height}px` : `0px`,
+    height: showLinks
+      ? `${linksRef.current.getBoundingClientRect().height}px`
+      : "0px",
   };
   return (
     <nav>
