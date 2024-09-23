@@ -7,12 +7,13 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const [showIcons, setShowIcons] = useState(false);
   const [showLogo, setShowLogo] = useState(false);
+
   const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
   return (
-    <div>
-      <nav className='nav-center'>
+    <nav>
+      <div className='nav-center'>
         <div className='nav-header'>
           <img src={logo} alt='logo' className='logo' />
           <button className='nav-toggle'>
@@ -37,8 +38,8 @@ const Navbar = () => {
             </ul>
           </div>
         )}
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 
