@@ -123,7 +123,7 @@ p {
 
 /* section */
 .section {
-  width: 90vw;
+  width: 95vw;
   margin: 0 auto;
   max-width: var(--max-width);
 }
@@ -181,10 +181,15 @@ nav {
 .social-icons {
   display: none;
 }
+.links-container {
+  /* overflow: hidden; */
+  transition: var(--transition);
+}
 
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
+
     margin: 0 auto;
     display: flex;
     align-items: center;
