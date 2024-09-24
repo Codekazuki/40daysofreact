@@ -182,14 +182,13 @@ nav {
   display: none;
 }
 .links-container {
-  /* overflow: hidden; */
+  overflow: hidden;
   transition: var(--transition);
 }
 
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
-
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -218,6 +217,7 @@ nav {
   }
   .social-icons {
     display: flex;
+    font-size: 1.5rem;
   }
   .social-icons a {
     margin: 0 0.5rem;

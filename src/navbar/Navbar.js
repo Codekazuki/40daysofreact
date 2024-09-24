@@ -14,9 +14,9 @@ const Navbar = () => {
     setShowLinks(!showLinks);
   };
   const linkStyles = {
-    // height: showLinks
-    //   ? `${linksRef.current.getBoundingClientRect().height}px`
-    //   : "0px",
+    height: showLinks
+      ? `${linksRef.current.getBoundingClientRect().height}px`
+      : "0px",
   };
   return (
     <nav>
@@ -31,7 +31,7 @@ const Navbar = () => {
           <div
             className='links-container'
             ref={linksContainerRef}
-            // style={linkStyles}
+            style={linkStyles}
           >
             <ul className='links' ref={linksRef}>
               {links.map((link) => {
