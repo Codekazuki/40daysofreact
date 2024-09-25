@@ -21,7 +21,6 @@ const Sidebar = () => {
         <img
           src={logo}
           alt='behave'
-          className='logo'
           style={{ width: "4rem", borderRadius: "50%" }}
         />
         <button onClick={closeSideBar} className='close-btn'>
