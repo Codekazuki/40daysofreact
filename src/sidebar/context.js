@@ -21,14 +21,14 @@ export const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={
-        (closeModal,
+      value={{
+        closeModal,
         openModal,
         closeSideBar,
         openSideBar,
         isModalOpen,
-        isSideBarOpen)
-      }
+        isSideBarOpen,
+      }}
     >
       {children}
     </AppContext.Provider>
