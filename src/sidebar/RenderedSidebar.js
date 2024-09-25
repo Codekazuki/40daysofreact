@@ -6,11 +6,11 @@ import Modal from "./Modal";
 
 const RenderedSidebar = () => {
   return (
-    <div>
+    <>
       <Home />
       <Modal />
       <Sidebar />
-    </div>
+    </>
   );
 };
 

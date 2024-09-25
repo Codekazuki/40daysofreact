@@ -1,4 +1,5 @@
 import React from "react";
+import { FaBars } from "react-icons/fa";
 import { useGlobalContext } from "./context";
 // value={
 //         (closeModal,
@@ -9,10 +10,18 @@ import { useGlobalContext } from "./context";
 //         isSideBarOpen)
 //       }
 const Home = () => {
-  const { openSideBar, closeSideBar } = useGlobalContext();
-  console.log(openSideBar);
-  console.log(closeSideBar);
-  return <div>Home</div>;
+  const { openSideBar, closeSideBar, openModal } = useGlobalContext();
+
+  return (
+    <main>
+      <button onClick={openSideBar} className='sidebar-toggle'>
+        <FaBars />
+      </button>
+      <button onClick={openModal} className='btn'>
+        Show Modal
+      </button>
+    </main>
+  );
 };
 
 export default Home;
