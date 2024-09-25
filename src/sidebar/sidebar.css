@@ -202,22 +202,24 @@ Modal
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(48, 6, 6, 0.799);
   display: grid;
   place-items: center;
   transition: var(--transition);
   visibility: hidden;
   z-index: -1;
+  opacity: 0;
 }
 /* OPEN/CLOSE MODAL */
 .show-modal {
+  opacity: 1;
   visibility: visible;
   z-index: 10;
 }
 .modal-container {
   background: var(--clr-white);
   border-radius: var(--radius);
-  width: 90vw;
+  width: 75vw;
   height: 30vh;
   max-width: var(--fixed-width);
   text-align: center;
@@ -234,6 +236,7 @@ Modal
   border-color: transparent;
   color: var(--clr-red-dark);
   cursor: pointer;
+  animation: bounce 3s ease-in-out infinite;
 }
 
 /*
