@@ -24,11 +24,14 @@ import ColorGenerator from "./colorGenerator/ColorGenerator";
 import GroceryBud from "./grocerybud/GroceryBud";
 import RenderedNavbar from "./navbar/RenderedNavbar";
 import RenderedSidebar from "./sidebar/RenderedSidebar";
+import { AppProvider } from "./sidebar/context";
 
 function App() {
   return (
     <div className='App'>
-      <RenderedSidebar />
+      <AppProvider>
+        <RenderedSidebar />
+      </AppProvider>
       {/* <RenderedNavbar /> */}
       {/* <GroceryBud /> */}
       {/* <ColorGenerator /> */}
