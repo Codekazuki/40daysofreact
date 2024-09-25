@@ -251,7 +251,7 @@ Sidebar
   padding: 1rem 1.5rem;
 }
 .close-btn {
-  font-size: 1.75rem;
+  font-size: 2.75rem;
   background: transparent;
   border-color: transparent;
   color: var(--clr-primary-5);
@@ -265,7 +265,7 @@ Sidebar
 }
 .logo {
   justify-self: center;
-  height: 40px;
+  /* height: 40px; */
 }
 
 .links a {
@@ -274,14 +274,14 @@ Sidebar
   font-size: 1.25rem;
   text-transform: capitalize;
   padding: 1rem 1.5rem;
-  color: var(--clr-grey-3);
+  color: var(--clr-grey-6);
   transition: var(--transition);
   letter-spacing: var(--spacing);
 }
 
 .links a:hover {
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-2);
+  background: var(--clr-grey-9);
+  color: var(--clr-grey-1);
 }
 .links a svg {
   font-size: 1.5rem;
