@@ -1,5 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "./context";
+import { FaBars } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 
 const SideBar = () => {
   const { isSideBarOpen, openSideBar, closeSideBar } = useGlobalContext();
@@ -8,10 +10,10 @@ const SideBar = () => {
       className={isSideBarOpen ? "sidebar-wrapper.show" : "sidebar-wrapper"}
     >
       {isSideBarOpen && (
-        <div>
+        <div className='sidebar-wrapper.show'>
           <h1>This is the SideBar</h1>
           <button onClick={closeSideBar} className='close-btn'>
-            close sidebar
+            <IoMdClose />
           </button>
         </div>
       )}

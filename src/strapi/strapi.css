@@ -336,10 +336,11 @@ Stripe Styles
   padding: 4rem 2rem;
 }
 .close-btn {
-  font-size: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-grey-5);
+  color: rgb(223, 31, 31);
   position: absolute;
   top: 1rem;
   right: 1rem;

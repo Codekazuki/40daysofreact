@@ -13,8 +13,8 @@ const Strapi = () => {
     <div>
       <NavBar />
       <Hero />
-      <SubMenu />
       <SideBar />
+      <SubMenu />
     </div>
   );
 };
