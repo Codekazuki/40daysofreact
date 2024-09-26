@@ -24,13 +24,17 @@ import ColorGenerator from "./colorGenerator/ColorGenerator";
 import GroceryBud from "./grocerybud/GroceryBud";
 import RenderedNavbar from "./navbar/RenderedNavbar";
 import RenderedSidebar from "./sidebar/RenderedSidebar";
-import { AppProvider } from "./sidebar/context";
+// import { AppProvider } from "./sidebar/context";
 import Strapi from "./strapi/Strapi";
+import { AppProvider } from "./strapi/context";
 
 function App() {
   return (
     <div className='App'>
-      <Strapi />
+      <AppProvider>
+        <Strapi />
+      </AppProvider>
+
       {/* <AppProvider>
         <RenderedSidebar />
       </AppProvider> */}
