@@ -25,13 +25,15 @@ import GroceryBud from "./grocerybud/GroceryBud";
 import RenderedNavbar from "./navbar/RenderedNavbar";
 import RenderedSidebar from "./sidebar/RenderedSidebar";
 import { AppProvider } from "./sidebar/context";
+import Strapi from "./strapi/Strapi";
 
 function App() {
   return (
     <div className='App'>
-      <AppProvider>
+      <Strapi />
+      {/* <AppProvider>
         <RenderedSidebar />
-      </AppProvider>
+      </AppProvider> */}
       {/* <RenderedNavbar /> */}
       {/* <GroceryBud /> */}
       {/* <ColorGenerator /> */}
