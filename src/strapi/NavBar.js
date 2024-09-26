@@ -7,10 +7,12 @@ const NavBar = () => {
 
   return (
     <nav>
-      <h3>The Nav</h3>
-      <button className='btn' onClick={openSideBar}>
-        <FaBars />
-      </button>
+      <div className='nav-center'>
+        <h3 className='logo'>The Nav</h3>
+        <button className='btn' onClick={openSideBar}>
+          <FaBars />
+        </button>
+      </div>
     </nav>
   );
 };
