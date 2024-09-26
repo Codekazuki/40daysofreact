@@ -1,28 +1,87 @@
-import { FaCreditCard, FaBook, FaBriefcase } from "react-icons/fa";
-import React from "react";
+import {
+  Fa500Px,
+  FaAccusoft,
+  FaAdversal,
+  FaAvianex,
+  FaBitcoin,
+  FaBtc,
+  FaCodiepie,
+  FaDocker,
+  FaGithubSquare,
+} from "react-icons/fa";
+import { nanoid } from "nanoid";
+
 const sublinks = [
   {
-    page: "products",
+    pageId: nanoid(),
+    page: "product",
     links: [
-      { label: "payment", icon: <FaCreditCard />, url: "/products" },
-      { label: "terminal", icon: <FaCreditCard />, url: "/products" },
-      { label: "connect", icon: <FaCreditCard />, url: "/products" },
+      {
+        id: nanoid(),
+        label: "community",
+        icon: <Fa500Px />,
+        url: "/product/community",
+      },
+      {
+        id: nanoid(),
+        label: "content",
+        icon: <FaAccusoft />,
+        url: "/product/content",
+      },
+      {
+        id: nanoid(),
+        label: "roles",
+        icon: <FaAdversal />,
+        url: "/product/roles",
+      },
     ],
   },
   {
-    page: "developers",
+    pageId: nanoid(),
+    page: "solutions",
     links: [
-      { label: "plugins", icon: <FaBook />, url: "/products" },
-      { label: "libraries", icon: <FaBook />, url: "/products" },
-      { label: "help", icon: <FaBook />, url: "/products" },
-      { label: "billing", icon: <FaBook />, url: "/products" },
+      {
+        id: nanoid(),
+        label: "developers",
+        icon: <FaAvianex />,
+        url: "/solutions/developers",
+      },
+      {
+        id: nanoid(),
+        label: "content managers",
+        icon: <FaBitcoin />,
+        url: "/solutions/content-managers",
+      },
+      {
+        id: nanoid(),
+        label: "business teams",
+        icon: <FaBtc />,
+        url: "/solutions/business teams",
+      },
+      {
+        id: nanoid(),
+        label: "ecommerce",
+        icon: <FaCodiepie />,
+        url: "/solutions/ecommerce",
+      },
     ],
   },
   {
-    page: "company",
+    page: "resources",
+    pageId: nanoid(),
     links: [
-      { label: "about", icon: <FaBriefcase />, url: "/products" },
-      { label: "customers", icon: <FaBriefcase />, url: "/products" },
+      {
+        id: nanoid(),
+        label: "starters",
+        icon: <FaDocker />,
+        url: "/resources/starters",
+      },
+      {
+        id: nanoid(),
+        label: "showcase",
+        icon: <FaGithubSquare />,
+        url: "/resources/showcase",
+      },
     ],
   },
 ];

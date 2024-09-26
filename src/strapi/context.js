@@ -3,7 +3,7 @@ const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const { info, SetInfo } = useState(false);
-  return <AppContext.Provider>{children}</AppContext.Provider>;
+  return <AppContext.Provider value={{ info }}>{children}</AppContext.Provider>;
 };
 
 export const useGlobalContext = () => {
