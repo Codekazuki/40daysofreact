@@ -8,7 +8,7 @@ const NavBar = () => {
     <nav>
       <h3>The Nav</h3>
       <button className='btn' onClick={openSideBar}>
-        open
+        open sidebar
       </button>
     </nav>
   );
