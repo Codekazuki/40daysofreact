@@ -10,6 +10,7 @@ import {
   FaFolderOpen,
   FaCalendarAlt,
   FaWpforms,
+  FaGithub,
 } from "react-icons/fa";
 export const links = [
   {
@@ -52,12 +53,12 @@ export const social = [
   },
   {
     id: 2,
-    url: "https://www.twitter.com",
+    url: "https://x.com/Coachkazuki",
     icon: <FaTwitter />,
   },
   {
     id: 3,
-    url: "https://www.twitter.com",
+    url: "https://www.linkedin.com/in/ayodele-agbowuro-74000358/",
     icon: <FaLinkedin />,
   },
   {
@@ -69,5 +70,10 @@ export const social = [
     id: 5,
     url: "https://www.twitter.com",
     icon: <FaSketch />,
+  },
+  {
+    id: 6,
+    url: "https://github.com/Codekazuki",
+    icon: <FaGithub />,
   },
 ];
