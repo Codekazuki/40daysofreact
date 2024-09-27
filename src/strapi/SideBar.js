@@ -17,8 +17,23 @@ const SideBar = () => {
           </button>
           <div className='sidebar-links'>
             {sublinks.map((item) => {
-              console.log(item);
-              return <h1>item</h1>;
+              const { page, pageId, links } = item;
+              return (
+                <article key={pageId}>
+                  <h4>{page}</h4>
+                  <div className='sidebar-sublinks'>
+                    {links.map((link) => {
+                      const { id, label, icon, url } = link;
+                      return (
+                        <a key={id} href={url}>
+                          {icon}
+                          {label}
+                        </a>
+                      );
+                    })}
+                  </div>
+                </article>
+              );
             })}
           </div>
         </div>
