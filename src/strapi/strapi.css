@@ -323,6 +323,7 @@ Hero
   line-height: 1.25;
 }
 .hero-center p {
+  color: white;
   line-height: 1.5rem;
 }
 
