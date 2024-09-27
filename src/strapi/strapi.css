@@ -467,7 +467,6 @@ Submenu
     background: var(--white);
     border-radius: var(--borderRadius);
     padding: 2rem;
-
     transform: rotateX(-90deg) translateX(-50%);
     transform-origin: top;
     perspective: 1000px;
@@ -476,7 +475,6 @@ Submenu
     opacity: 0;
     transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
     z-index: -1;
-    /* border: 2px solid red; */
   }
   .show-submenu {
     opacity: 1;
@@ -500,6 +498,7 @@ Submenu
     gap: 1rem;
   }
   .submenu-links svg {
-    color: var(--grey-500);
+    color: var(--primary-300);
+    font-size: 1.5rem;
   }
 }
