@@ -7,39 +7,36 @@ import sublinks from "./data";
 const SideBar = () => {
   const { isSideBarOpen, openSideBar, closeSideBar } = useGlobalContext();
   return (
-    // <aside className='sidebar'>
-    <div className={isSideBarOpen ? "sidebar-wrapper.show" : "sidebar-wrapper"}>
-      {isSideBarOpen && (
-        <div className='sidebar-wrapper.show'>
-          <h1>This is the SideBar</h1>
-          <button onClick={closeSideBar} className='close-btn'>
-            <IoMdClose />
-          </button>
-          <div className='sidebar-links'>
-            {sublinks.map((item) => {
-              const { page, pageId, links } = item;
-              return (
-                <article key={pageId}>
-                  <h4>{page}</h4>
-                  <div className='sidebar-sublinks'>
-                    {links.map((link) => {
-                      const { id, label, icon, url } = link;
-                      return (
-                        <a key={id} href={url}>
-                          {icon}
-                          {label}
-                        </a>
-                      );
-                    })}
-                  </div>
-                </article>
-              );
-            })}
-          </div>
+    <aside className={isSideBarOpen ? "sidebar show-sidebar" : "sidebar"}>
+      <div className='sidebar-container'>
+        <h1>This is the SideBar</h1>
+        <button onClick={closeSideBar} className='close-btn'>
+          <IoMdClose />
+        </button>
+        <div className='sidebar-links'>
+          {sublinks.map((item) => {
+            const { page, pageId, links } = item;
+            return (
+              <article key={pageId}>
+                <h4>{page}</h4>
+                <div className='sidebar-sublinks'>
+                  {links.map((link) => {
+                    const { id, label, icon, url } = link;
+                    return (
+                      <a key={id} href={url}>
+                        {icon}
+                        {label}
+                      </a>
+                    );
+                  })}
+                </div>
+              </article>
+            );
+          })}
         </div>
-      )}
-    </div>
-    // </aside>
+      </div>
+      //{" "}
+    </aside>
   );
 };
 
