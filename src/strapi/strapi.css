@@ -475,6 +475,7 @@ Submenu
     visibility: hidden;
     opacity: 0;
     transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    z-index: -1;
     /* border: 2px solid red; */
   }
   .show-submenu {
