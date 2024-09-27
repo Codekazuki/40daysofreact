@@ -277,26 +277,28 @@ nav {
   max-width: var(--max-width);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  text-transform: none;
-  color: red;
-  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: var(--primary-700);
+  letter-spacing: 3px;
   font-weight: 700;
 }
 .toggle-btn {
-  width: 2rem;
+  width: 3rem;
   height: 2rem;
-  background: var(--white);
-  color: var(--primary-700);
+  color: var(--white);
+  background: var(--primary-700);
   border-radius: var(--borderRadius);
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .toggle-btn:hover {
-  transform: scale(1.05);
+  color: var(--primary-400);
+  transform: scale(1.25);
 }
 
 /* 
