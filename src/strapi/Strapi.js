@@ -8,7 +8,7 @@ import "./strapi.css";
 
 const Strapi = () => {
   const { isSideBarOpen, openSideBar, closeSideBar } = useGlobalContext();
-  console.log(isSideBarOpen);
+
   return (
     <div>
       <NavBar />

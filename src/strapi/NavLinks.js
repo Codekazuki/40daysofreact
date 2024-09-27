@@ -6,15 +6,13 @@ const NavLinks = () => {
   const { setPageId } = useGlobalContext();
   return (
     <div className='nav-links'>
-      {sublinks.map((link) => {
-        const { pageId, page } = link;
+      {sublinks.map((item) => {
+        const { pageId, page } = item;
         return (
           <button
             key={pageId}
             className='nav-link'
-            onMouseEnter={() => {
-              setPageId(pageId);
-            }}
+            onMouseEnter={() => setPageId(pageId)}
           >
             {page}
           </button>
