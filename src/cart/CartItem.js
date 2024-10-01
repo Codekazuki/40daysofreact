@@ -13,15 +13,16 @@ const CartItem = () => {
       {data.map((item) => {
         const { id, title, price, amount, img } = item;
         return (
-          <ul key={id}>
+          <ul className='cart-item' key={id}>
             <li>
               <span>{amount}</span>
-              <h3>{title}</h3>
+              <h2>{title}</h2>
               <span>{price}</span>
-              <img src={img} alt={title} style={{ height: "4rem" }} />
+              <img src={img} alt={title} />
               <button onClick={() => handleDelete(id)} className='btn'>
                 delete
               </button>
+              <hr />
             </li>
           </ul>
         );
