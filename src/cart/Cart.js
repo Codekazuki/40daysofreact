@@ -9,7 +9,6 @@ const Cart = () => {
     <div>
       <NavBar />
       <CartContainer />
-      <CartItem />
     </div>
   );
 };
