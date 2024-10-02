@@ -27,7 +27,10 @@ const reducer = (state, action) => {
     const newCart = new Map(state.cart);
     const itemId = action.payload.id;
     const item = newCart.get(itemId);
-    const newItem = { ...item, amount: item.amount - 1 };
+    const newAmount = item.amount - 1;
+    const checkAmount = newAmount < 1 ? 1 : newAmount;
+    const newItem = { ...item, amount: checkAmount };
+
     newCart.set(itemId, newItem);
     return { ...state, cart: newCart };
   }
