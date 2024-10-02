@@ -1,4 +1,5 @@
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { useGlobalContext } from "./context";
 
 const CartItem = ({ id, img, title, price, amount }) => {
   return (
