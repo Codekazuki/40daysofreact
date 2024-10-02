@@ -35,8 +35,7 @@ const CartContainer = () => {
           </h5>
         </div>
         <button className='btn btn-hipster' onClick={clearCart}>
-          {" "}
-          clear cart{" "}
+          clear cart
         </button>
       </footer>
     </section>
