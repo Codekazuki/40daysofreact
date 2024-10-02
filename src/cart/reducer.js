@@ -37,7 +37,6 @@ const reducer = (state, action) => {
     const newAmount = item.amount - 1;
     const checkAmount = newAmount < 1 ? 1 : newAmount;
     const newItem = { ...item, amount: checkAmount };
-
     newCart.set(itemId, newItem);
     return { ...state, cart: newCart };
   }
