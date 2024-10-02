@@ -1,10 +1,8 @@
 import { useContext, createContext, useEffect, useReducer } from "react";
+import reducer from "./reducer";
 
 const AppContext = createContext();
 
-const reducer = (state, action) => {
-  return state;
-};
 const initialState = {
   loading: false,
   cart: [],
