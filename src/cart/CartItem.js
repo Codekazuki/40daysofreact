@@ -15,7 +15,6 @@ const CartItem = () => {
         return (
           <ul className='cart-item' key={id}>
             <li>
-              <span>{amount}</span>
               <h2>{title}</h2>
               <span>{price}</span>
               <img src={img} alt={title} />
