@@ -6,6 +6,7 @@ import {
   LOADING,
   DISPLAY_ITEMS,
 } from "./actions";
-export const reducer = (state, action) => {
+const reducer = (state, action) => {
   return state;
 };
+export default reducer;
