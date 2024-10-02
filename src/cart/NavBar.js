@@ -6,7 +6,7 @@ const NavBar = () => {
       <div className='nav-center'>
         <h4>UseReducer</h4>
         <div className='nav-container'>
-          <FaCartPlus />
+          <FaCartPlus className='cart-icon' />
           <div className='amount-container'>
             <p className='total-amount'>2</p>
           </div>
