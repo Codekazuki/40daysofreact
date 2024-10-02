@@ -1,6 +1,5 @@
 import React from "react";
 import CartContainer from "./CartContainer";
-import CartItem from "./CartItem";
 import "./cart.css";
 import NavBar from "./NavBar";
 

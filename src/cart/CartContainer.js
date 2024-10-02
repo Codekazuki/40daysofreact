@@ -22,7 +22,7 @@ const CartContainer = () => {
       <div>
         {cartArray.map((cartItem) => {
           const { id } = cartItem;
-          return <CartItem key={id} />;
+          return <CartItem key={id} {...cartItem} />;
         })}
       </div>
       <footer>

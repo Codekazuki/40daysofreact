@@ -1,8 +1,42 @@
-import React, { useState } from "react";
-import cartItems from "./data";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-const CartItem = () => {
-  return <div>hello Crat item</div>;
+const CartItem = ({ id, img, title, price, amount }) => {
+  return (
+    <article className='cart-item'>
+      <img src={img} alt={title} />
+      <div>
+        <h5>{title}</h5>
+        <span className='item-price'>${price}</span>
+        <button
+          onClick={() => {
+            console.log("removed");
+          }}
+          className='remove-btn'
+        >
+          remove
+        </button>
+      </div>
+      <div>
+        <button
+          className='amount-btn'
+          onClick={() => {
+            console.log("increase by 1");
+          }}
+        >
+          <FaChevronUp className='amount-icon' />
+        </button>
+        <span className='amount'>{amount}</span>
+        <button
+          className='amount-btn'
+          onClick={() => {
+            console.log("decrease by 1");
+          }}
+        >
+          <FaChevronDown className='amount-icon' />
+        </button>
+      </div>
+    </article>
+  );
 };
 
 export default CartItem;
