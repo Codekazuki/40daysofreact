@@ -25,17 +25,17 @@ import GroceryBud from "./grocerybud/GroceryBud";
 import RenderedNavbar from "./navbar/RenderedNavbar";
 import RenderedSidebar from "./sidebar/RenderedSidebar";
 // import { AppProvider } from "./sidebar/context";
-import Strapi from "./strapi/Strapi";
+// import Strapi from "./strapi/Strapi";
 // import { AppProvider } from "./strapi/context";
-import Cart from "./cart/Cart";
-import { AppProvider } from "./cart/context";
+// import Cart from "./cart/Cart";
+// import { AppProvider } from "./cart/context";
 
 function App() {
   return (
     <div className='App'>
-      <AppProvider>
+      {/* <AppProvider>
         <Cart />
-      </AppProvider>
+      </AppProvider> */}
       {/* <AppProvider>
         <Strapi />
       </AppProvider> */}
@@ -57,7 +57,7 @@ function App() {
       {/* <Disciple2 /> */}
       {/* <Disciples /> */}
       {/* <EuropeanTeams /> */}
-      {/* <CardList /> */}
+      <CardList />
       {/* <RenderedBirthday /> */}
     </div>
   );
