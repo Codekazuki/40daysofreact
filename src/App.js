@@ -28,7 +28,7 @@ import RenderedSidebar from "./sidebar/RenderedSidebar";
 // import Strapi from "./strapi/Strapi";
 // import { AppProvider } from "./strapi/context";
 // import Cart from "./cart/Cart";
-// import { AppProvider } from "./cart/context";
+import { AppProvider } from "./cart/context";
 
 function App() {
   return (
@@ -40,9 +40,9 @@ function App() {
         <Strapi />
       </AppProvider> */}
 
-      {/* <AppProvider>
+      <AppProvider>
         <RenderedSidebar />
-      </AppProvider> */}
+      </AppProvider>
       {/* <RenderedNavbar /> */}
       <GroceryBud />
       {/* <ColorGenerator /> */}
