@@ -44,7 +44,7 @@ function App() {
         <RenderedSidebar />
       </AppProvider> */}
       {/* <RenderedNavbar /> */}
-      {/* <GroceryBud /> */}
+      <GroceryBud />
       {/* <ColorGenerator /> */}
       {/* <Lorem /> */}
       {/* <Slider /> */}
