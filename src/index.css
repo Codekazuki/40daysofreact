@@ -13,3 +13,14 @@
 .btn:hover {
   background: rgb(174, 111, 174);
 }
+.outer {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.inner {
+  background-color: green;
+  color: red;
+  text-align: center;
+}
