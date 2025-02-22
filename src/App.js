@@ -29,10 +29,12 @@ import RenderedSidebar from "./sidebar/RenderedSidebar";
 // import { AppProvider } from "./strapi/context";
 // import Cart from "./cart/Cart";
 import { AppProvider } from "./cart/context";
+import ProgressBar from "./ProgressBar";
 
 function App() {
   return (
     <div className='App'>
+      <ProgressBar />
       {/* <AppProvider>
         <Cart />
       </AppProvider> */}
@@ -40,9 +42,9 @@ function App() {
         <Strapi />
       </AppProvider> */}
 
-      <AppProvider>
+      {/* <AppProvider>
         <RenderedSidebar />
-      </AppProvider>
+      </AppProvider> */}
       {/* <RenderedNavbar /> */}
       <GroceryBud />
       {/* <ColorGenerator /> */}

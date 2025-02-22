@@ -5,7 +5,7 @@ import { arrayOfObjects } from "./birthdayData";
 const CardList = () => {
   const cardList = arrayOfObjects.map((item) => {
     return (
-      <div>
+      <div key={item.num}>
         <Card
           phrase={item.phrase}
           name={item.name}
