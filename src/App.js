@@ -34,7 +34,7 @@ import ProgressBar from "./ProgressBar";
 function App() {
   return (
     <div className='App'>
-      <ProgressBar />
+      <ProgressBar progress={70} />
       {/* <AppProvider>
         <Cart />
       </AppProvider> */}
