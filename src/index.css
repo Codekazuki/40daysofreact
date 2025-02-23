@@ -27,6 +27,6 @@
 }
 .inner {
   background-color: green;
-
-  text-align: center;
+  text-align: right;
+  transition: 1s ease-in;
 }
