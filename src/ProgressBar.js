@@ -1,13 +1,23 @@
 import React from "react";
 import "./index.css";
 
+const percents = [0, 5, 20];
+
 const ProgressBar = ({ progress }) => {
   return (
-    <div className='outer'>
-      <div style={{ width: `${progress}%` }} className='inner'>
-        {progress}%
+    <section className='cont'>
+      <div className='outer'>
+        <div
+          style={{
+            width: `${progress}%`,
+            color: `${progress > 3 ? "white" : "black"}`,
+          }}
+          className='inner'
+        >
+          {progress}%
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

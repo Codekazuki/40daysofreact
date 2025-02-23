@@ -13,14 +13,19 @@
 .btn:hover {
   background: rgb(174, 111, 174);
 }
+.cont {
+  display: flex;
+  justify-content: center;
+}
 .outer {
   background-color: white;
   border-radius: 8px;
   border: 1px solid black;
   overflow: hidden;
+  width: 80%;
 }
 .inner {
   background-color: green;
-  color: red;
+
   text-align: center;
 }
