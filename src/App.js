@@ -31,10 +31,14 @@ import RenderedSidebar from "./sidebar/RenderedSidebar";
 import { AppProvider } from "./cart/context";
 import ProgressBar from "./ProgressBar";
 
+const percents = [0, 5, 20];
 function App() {
   return (
     <div className='App'>
-      <ProgressBar progress={2} />
+      {percents.map((bar) => (
+        <ProgressBar progress={bar} />
+      ))}
+
       {/* <AppProvider>
         <Cart />
       </AppProvider> */}

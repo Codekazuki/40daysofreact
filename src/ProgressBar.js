@@ -1,8 +1,6 @@
 import React from "react";
 import "./index.css";
 
-const percents = [0, 5, 20];
-
 const ProgressBar = ({ progress }) => {
   return (
     <section className='cont'>

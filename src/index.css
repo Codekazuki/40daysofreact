@@ -23,6 +23,7 @@
   border: 1px solid black;
   overflow: hidden;
   width: 80%;
+  margin: 4px;
 }
 .inner {
   background-color: green;
