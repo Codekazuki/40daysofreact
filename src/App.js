@@ -31,7 +31,7 @@ import RenderedSidebar from "./sidebar/RenderedSidebar";
 import { AppProvider } from "./cart/context";
 import ProgressBar from "./ProgressBar";
 
-const percents = [3, 5, 20, 70];
+const percents = [20, 5, 26, 70];
 function App() {
   return (
     <div className='App'>
