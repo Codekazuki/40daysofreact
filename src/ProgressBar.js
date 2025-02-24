@@ -5,7 +5,7 @@ const ProgressBar = ({ progress }) => {
   const [animatedProgress, setAnimatedProgress] = useState(0);
   useEffect(() => {
     setTimeout(() => setAnimatedProgress(progress), 100);
-  }, [animatedProgress]);
+  }, [progress]);
   return (
     <section className='cont'>
       <div className='outer'>
